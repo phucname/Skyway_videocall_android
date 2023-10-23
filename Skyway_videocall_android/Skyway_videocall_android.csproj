@@ -9,4 +9,14 @@
     <ApplicationVersion>1</ApplicationVersion>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Square.OkHttp3" Version="4.11.0.2" />
+    <PackageReference Include="Square.OkHttp3.LoggingInterceptor" Version="4.10.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\skyway_core\skyway_core.csproj" />
+    <ProjectReference Include="..\skyway_room\skyway_room.csproj" />
+    <ProjectReference Include="..\skyway_sfubot\skyway_sfubot.csproj" />
+    <ProjectReference Include="..\webrtc\webrtc.csproj" />
+  </ItemGroup>
 </Project>

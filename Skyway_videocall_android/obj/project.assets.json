@@ -1,15 +1,1225 @@
 {
   "version": 3,
   "targets": {
-    "net7.0-android33.0": {},
-    "net7.0-android33.0/android-arm": {},
-    "net7.0-android33.0/android-arm64": {},
-    "net7.0-android33.0/android-x64": {},
-    "net7.0-android33.0/android-x86": {}
+    "net7.0-android33.0": {
+      "Square.OkHttp3/4.11.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO": "3.3.0.2",
+          "Xamarin.Kotlin.StdLib": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkHttp3.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkHttp3.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkHttp3.LoggingInterceptor/4.10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkHttp3": "4.11.0.2",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkHttp3.LoggingInterceptor.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkHttp3.LoggingInterceptor.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkIO/3.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO.JVM": "3.3.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkIO.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkIO.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkIO.JVM/3.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib.Common": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkIO.JVM.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkIO.JVM.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Xamarin.Jetbrains.Annotations/24.0.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Jetbrains.Annotations": "24.0.1.2",
+          "Xamarin.Kotlin.StdLib.Common": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Common/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Jdk7/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Jdk8/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk7": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.targets": {}
+        }
+      },
+      "skyway_core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_core.dll": {}
+        }
+      },
+      "skyway_room/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_room.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_room.dll": {}
+        }
+      },
+      "skyway_sfubot/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_sfubot.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_sfubot.dll": {}
+        }
+      },
+      "webrtc/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/webrtc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/webrtc.dll": {}
+        }
+      }
+    },
+    "net7.0-android33.0/android-arm": {
+      "Square.OkHttp3/4.11.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO": "3.3.0.2",
+          "Xamarin.Kotlin.StdLib": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkHttp3.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkHttp3.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkHttp3.LoggingInterceptor/4.10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkHttp3": "4.11.0.2",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkHttp3.LoggingInterceptor.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkHttp3.LoggingInterceptor.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkIO/3.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO.JVM": "3.3.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkIO.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkIO.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkIO.JVM/3.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib.Common": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkIO.JVM.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkIO.JVM.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Xamarin.Jetbrains.Annotations/24.0.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Jetbrains.Annotations": "24.0.1.2",
+          "Xamarin.Kotlin.StdLib.Common": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Common/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Jdk7/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Jdk8/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk7": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.targets": {}
+        }
+      },
+      "skyway_core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_core.dll": {}
+        }
+      },
+      "skyway_room/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_room.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_room.dll": {}
+        }
+      },
+      "skyway_sfubot/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_sfubot.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_sfubot.dll": {}
+        }
+      },
+      "webrtc/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/webrtc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/webrtc.dll": {}
+        }
+      }
+    },
+    "net7.0-android33.0/android-arm64": {
+      "Square.OkHttp3/4.11.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO": "3.3.0.2",
+          "Xamarin.Kotlin.StdLib": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkHttp3.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkHttp3.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkHttp3.LoggingInterceptor/4.10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkHttp3": "4.11.0.2",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkHttp3.LoggingInterceptor.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkHttp3.LoggingInterceptor.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkIO/3.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO.JVM": "3.3.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkIO.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkIO.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkIO.JVM/3.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib.Common": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkIO.JVM.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkIO.JVM.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Xamarin.Jetbrains.Annotations/24.0.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Jetbrains.Annotations": "24.0.1.2",
+          "Xamarin.Kotlin.StdLib.Common": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Common/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Jdk7/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Jdk8/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk7": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.targets": {}
+        }
+      },
+      "skyway_core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_core.dll": {}
+        }
+      },
+      "skyway_room/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_room.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_room.dll": {}
+        }
+      },
+      "skyway_sfubot/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_sfubot.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_sfubot.dll": {}
+        }
+      },
+      "webrtc/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/webrtc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/webrtc.dll": {}
+        }
+      }
+    },
+    "net7.0-android33.0/android-x64": {
+      "Square.OkHttp3/4.11.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO": "3.3.0.2",
+          "Xamarin.Kotlin.StdLib": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkHttp3.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkHttp3.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkHttp3.LoggingInterceptor/4.10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkHttp3": "4.11.0.2",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkHttp3.LoggingInterceptor.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkHttp3.LoggingInterceptor.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkIO/3.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO.JVM": "3.3.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkIO.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkIO.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkIO.JVM/3.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib.Common": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkIO.JVM.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkIO.JVM.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Xamarin.Jetbrains.Annotations/24.0.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Jetbrains.Annotations": "24.0.1.2",
+          "Xamarin.Kotlin.StdLib.Common": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Common/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Jdk7/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Jdk8/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk7": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.targets": {}
+        }
+      },
+      "skyway_core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_core.dll": {}
+        }
+      },
+      "skyway_room/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_room.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_room.dll": {}
+        }
+      },
+      "skyway_sfubot/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_sfubot.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_sfubot.dll": {}
+        }
+      },
+      "webrtc/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/webrtc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/webrtc.dll": {}
+        }
+      }
+    },
+    "net7.0-android33.0/android-x86": {
+      "Square.OkHttp3/4.11.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO": "3.3.0.2",
+          "Xamarin.Kotlin.StdLib": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkHttp3.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkHttp3.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkHttp3.LoggingInterceptor/4.10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkHttp3": "4.11.0.2",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkHttp3.LoggingInterceptor.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkHttp3.LoggingInterceptor.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkIO/3.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO.JVM": "3.3.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkIO.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkIO.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Square.OkIO.JVM/3.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib.Common": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk8": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Square.OkIO.JVM.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Square.OkIO.JVM.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "Xamarin.Jetbrains.Annotations/24.0.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Jetbrains.Annotations": "24.0.1.2",
+          "Xamarin.Kotlin.StdLib.Common": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Common/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Jdk7/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Jdk8/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Kotlin.StdLib": "1.9.0",
+          "Xamarin.Kotlin.StdLib.Jdk7": "1.9.0"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.targets": {}
+        }
+      },
+      "skyway_core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_core.dll": {}
+        }
+      },
+      "skyway_room/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_room.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_room.dll": {}
+        }
+      },
+      "skyway_sfubot/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/skyway_sfubot.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/skyway_sfubot.dll": {}
+        }
+      },
+      "webrtc/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/webrtc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/webrtc.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Square.OkHttp3/4.11.0.2": {
+      "sha512": "mejXToXb4IKvES3YzccRySg2O8l1Ie/fglXqY8KFj0uxdnpZJaraFyuCMzJI32e5dUp7DqK1FfWpRtwwbxhjZw==",
+      "type": "package",
+      "path": "square.okhttp3/4.11.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/monoandroid12.0/Square.OkHttp3.dll",
+        "lib/monoandroid12.0/Square.OkHttp3.xml",
+        "lib/net6.0-android31.0/Square.OkHttp3.aar",
+        "lib/net6.0-android31.0/Square.OkHttp3.dll",
+        "lib/net6.0-android31.0/Square.OkHttp3.xml",
+        "square.okhttp3.4.11.0.2.nupkg.sha512",
+        "square.okhttp3.nuspec"
+      ]
+    },
+    "Square.OkHttp3.LoggingInterceptor/4.10.0.1": {
+      "sha512": "jWL6x5Rw3jJcUI/QUKjWbecpyEk6KogRDsMSpK8WOLJjZncFBQIyXISjjQj6sCV4dbEggJTyOgvbQTCzAT3Dkg==",
+      "type": "package",
+      "path": "square.okhttp3.logginginterceptor/4.10.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/monoandroid12.0/Square.OkHttp3.LoggingInterceptor.dll",
+        "lib/monoandroid12.0/Square.OkHttp3.LoggingInterceptor.xml",
+        "lib/net6.0-android31.0/Square.OkHttp3.LoggingInterceptor.aar",
+        "lib/net6.0-android31.0/Square.OkHttp3.LoggingInterceptor.dll",
+        "lib/net6.0-android31.0/Square.OkHttp3.LoggingInterceptor.xml",
+        "square.okhttp3.logginginterceptor.4.10.0.1.nupkg.sha512",
+        "square.okhttp3.logginginterceptor.nuspec"
+      ]
+    },
+    "Square.OkIO/3.3.0.2": {
+      "sha512": "YJzH7eEQSLfyeWrOfKgwZlA+KxuNxtBKdyxc9hq2eRVQqKZXotWWaoOREGoEwzyuFCUviocqLPv/2HTHrTvlSA==",
+      "type": "package",
+      "path": "square.okio/3.3.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/monoandroid12.0/Square.OkIO.dll",
+        "lib/monoandroid12.0/Square.OkIO.xml",
+        "lib/net6.0-android31.0/Square.OkIO.aar",
+        "lib/net6.0-android31.0/Square.OkIO.dll",
+        "lib/net6.0-android31.0/Square.OkIO.xml",
+        "square.okio.3.3.0.2.nupkg.sha512",
+        "square.okio.nuspec"
+      ]
+    },
+    "Square.OkIO.JVM/3.3.0.2": {
+      "sha512": "lPC2mSEwlZvoBNMHAFf6njTa81ZrknGSPaJsP7r6UvZ3KcHiC6LXl3NFv8Pn65Fpc1zd6enFIPr7dB3oVT0VdQ==",
+      "type": "package",
+      "path": "square.okio.jvm/3.3.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/monoandroid12.0/Square.OkIO.JVM.dll",
+        "lib/monoandroid12.0/Square.OkIO.JVM.xml",
+        "lib/net6.0-android31.0/Square.OkIO.JVM.aar",
+        "lib/net6.0-android31.0/Square.OkIO.JVM.dll",
+        "lib/net6.0-android31.0/Square.OkIO.JVM.xml",
+        "square.okio.jvm.3.3.0.2.nupkg.sha512",
+        "square.okio.jvm.nuspec"
+      ]
+    },
+    "Xamarin.Jetbrains.Annotations/24.0.1.2": {
+      "sha512": "aYDHFjX/G1aejrymfJ/W7uA41paIJ426wTcWxNcAgU5FG7DINsDq1a1tAWj3O2T1nJy1h6BD/CgvN7tR9GWLbg==",
+      "type": "package",
+      "path": "xamarin.jetbrains.annotations/24.0.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/monoandroid12.0/Xamarin.Jetbrains.Annotations.targets",
+        "build/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets",
+        "buildTransitive/monoandroid12.0/Xamarin.Jetbrains.Annotations.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets",
+        "jar/org.jetbrains.annotations-24.0.1.jar",
+        "lib/monoandroid12.0/Xamarin.Jetbrains.Annotations.dll",
+        "lib/monoandroid12.0/Xamarin.Jetbrains.Annotations.xml",
+        "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll",
+        "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.xml",
+        "xamarin.jetbrains.annotations.24.0.1.2.nupkg.sha512",
+        "xamarin.jetbrains.annotations.nuspec"
+      ]
+    },
+    "Xamarin.Kotlin.StdLib/1.9.0": {
+      "sha512": "8kOuuy2zRtbVF1x80kglI8MKuMnPHcnD+i8BlgA1j5UnWswNuCNSVsC+0LJN+hn1VbOb0h8dd1amddaicqhvUQ==",
+      "type": "package",
+      "path": "xamarin.kotlin.stdlib/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/monoandroid12.0/Xamarin.Kotlin.StdLib.targets",
+        "build/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets",
+        "buildTransitive/monoandroid12.0/Xamarin.Kotlin.StdLib.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets",
+        "jar/org.jetbrains.kotlin.kotlin-stdlib-1.9.0.jar",
+        "lib/monoandroid12.0/Xamarin.Kotlin.StdLib.dll",
+        "lib/monoandroid12.0/Xamarin.Kotlin.StdLib.xml",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.xml",
+        "xamarin.kotlin.stdlib.1.9.0.nupkg.sha512",
+        "xamarin.kotlin.stdlib.nuspec"
+      ]
+    },
+    "Xamarin.Kotlin.StdLib.Common/1.9.0": {
+      "sha512": "3mu5WQLF4fk88nDLqlK6KU5+gEVJoecE7YN5FOQ2cgoOjthjS65zM+88sg0FSZusAljbyhCCvQGCWkkAYTqLSg==",
+      "type": "package",
+      "path": "xamarin.kotlin.stdlib.common/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/monoandroid12.0/Xamarin.Kotlin.StdLib.Common.targets",
+        "build/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.targets",
+        "buildTransitive/monoandroid12.0/Xamarin.Kotlin.StdLib.Common.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.targets",
+        "jar/org.jetbrains.kotlin.kotlin-stdlib-common-1.9.0.jar",
+        "lib/monoandroid12.0/Xamarin.Kotlin.StdLib.Common.dll",
+        "lib/monoandroid12.0/Xamarin.Kotlin.StdLib.Common.xml",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.xml",
+        "xamarin.kotlin.stdlib.common.1.9.0.nupkg.sha512",
+        "xamarin.kotlin.stdlib.common.nuspec"
+      ]
+    },
+    "Xamarin.Kotlin.StdLib.Jdk7/1.9.0": {
+      "sha512": "oXOQFVqIG7rdmvH+IJvJtM0d5yQUkQPjUY2wiKa+XcZLcbdbVVznTgb770qbYwu6TEb3EmJPB2+to86sOGh8aw==",
+      "type": "package",
+      "path": "xamarin.kotlin.stdlib.jdk7/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/monoandroid12.0/Xamarin.Kotlin.StdLib.Jdk7.targets",
+        "build/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.targets",
+        "buildTransitive/monoandroid12.0/Xamarin.Kotlin.StdLib.Jdk7.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.targets",
+        "jar/org.jetbrains.kotlin.kotlin-stdlib-jdk7-1.9.0.jar",
+        "lib/monoandroid12.0/Xamarin.Kotlin.StdLib.Jdk7.dll",
+        "lib/monoandroid12.0/Xamarin.Kotlin.StdLib.Jdk7.xml",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.dll",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk7.xml",
+        "xamarin.kotlin.stdlib.jdk7.1.9.0.nupkg.sha512",
+        "xamarin.kotlin.stdlib.jdk7.nuspec"
+      ]
+    },
+    "Xamarin.Kotlin.StdLib.Jdk8/1.9.0": {
+      "sha512": "oj/TAlY/nBay1I23XR643NBihBgMUjQORM7VE3Bzmmt55m+cVPoS7v0zH5j3uIGqW6sYOBfY7cpx18sOdksSqw==",
+      "type": "package",
+      "path": "xamarin.kotlin.stdlib.jdk8/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/monoandroid12.0/Xamarin.Kotlin.StdLib.Jdk8.targets",
+        "build/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.targets",
+        "buildTransitive/monoandroid12.0/Xamarin.Kotlin.StdLib.Jdk8.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.targets",
+        "jar/org.jetbrains.kotlin.kotlin-stdlib-jdk8-1.9.0.jar",
+        "lib/monoandroid12.0/Xamarin.Kotlin.StdLib.Jdk8.dll",
+        "lib/monoandroid12.0/Xamarin.Kotlin.StdLib.Jdk8.xml",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.dll",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Jdk8.xml",
+        "xamarin.kotlin.stdlib.jdk8.1.9.0.nupkg.sha512",
+        "xamarin.kotlin.stdlib.jdk8.nuspec"
+      ]
+    },
+    "skyway_core/1.0.0": {
+      "type": "project",
+      "path": "../skyway_core/skyway_core.csproj",
+      "msbuildProject": "../skyway_core/skyway_core.csproj"
+    },
+    "skyway_room/1.0.0": {
+      "type": "project",
+      "path": "../skyway_room/skyway_room.csproj",
+      "msbuildProject": "../skyway_room/skyway_room.csproj"
+    },
+    "skyway_sfubot/1.0.0": {
+      "type": "project",
+      "path": "../skyway_sfubot/skyway_sfubot.csproj",
+      "msbuildProject": "../skyway_sfubot/skyway_sfubot.csproj"
+    },
+    "webrtc/1.0.0": {
+      "type": "project",
+      "path": "../webrtc/webrtc.csproj",
+      "msbuildProject": "../webrtc/webrtc.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0-android33.0": []
+    "net7.0-android33.0": [
+      "Square.OkHttp3 >= 4.11.0.2",
+      "Square.OkHttp3.LoggingInterceptor >= 4.10.0.1",
+      "skyway_core >= 1.0.0",
+      "skyway_room >= 1.0.0",
+      "skyway_sfubot >= 1.0.0",
+      "webrtc >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Dell\\.nuget\\packages\\": {},
@@ -43,7 +1253,20 @@
       "frameworks": {
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Dell\\project\\Skyway_videocall_android\\skyway_core\\skyway_core.csproj": {
+              "projectPath": "C:\\Users\\Dell\\project\\Skyway_videocall_android\\skyway_core\\skyway_core.csproj"
+            },
+            "C:\\Users\\Dell\\project\\Skyway_videocall_android\\skyway_room\\skyway_room.csproj": {
+              "projectPath": "C:\\Users\\Dell\\project\\Skyway_videocall_android\\skyway_room\\skyway_room.csproj"
+            },
+            "C:\\Users\\Dell\\project\\Skyway_videocall_android\\skyway_sfubot\\skyway_sfubot.csproj": {
+              "projectPath": "C:\\Users\\Dell\\project\\Skyway_videocall_android\\skyway_sfubot\\skyway_sfubot.csproj"
+            },
+            "C:\\Users\\Dell\\project\\Skyway_videocall_android\\webrtc\\webrtc.csproj": {
+              "projectPath": "C:\\Users\\Dell\\project\\Skyway_videocall_android\\webrtc\\webrtc.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -55,6 +1278,16 @@
     "frameworks": {
       "net7.0-android33.0": {
         "targetAlias": "net7.0-android",
+        "dependencies": {
+          "Square.OkHttp3": {
+            "target": "Package",
+            "version": "[4.11.0.2, )"
+          },
+          "Square.OkHttp3.LoggingInterceptor": {
+            "target": "Package",
+            "version": "[4.10.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

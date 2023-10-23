@@ -1,0 +1,13 @@
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\build.props
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\adb.props
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\Skyway_videocall_android.csproj.AssemblyReference.cache
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\libraryprojectimports.cache
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\stamp\_BuildLibraryImportsCache.stamp
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\res.flag
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\R.txt
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\R.cs.flag
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\Skyway_videocall_android.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\Skyway_videocall_android.AssemblyInfoInputs.cache
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\Skyway_videocall_android.AssemblyInfo.cs
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\Skyway_videocall_android.csproj.CoreCompileInputs.cache

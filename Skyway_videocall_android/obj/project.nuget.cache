@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "SE2x0ovXo8rKePxQc90gBsTtFBkEGuB4YRJZGJQr1G5Nh0XyasBAbwk4eR/eWTa0qm8MD33m8Yzy8Dmd+/6XBA==",
+  "dgSpecHash": "UQ4AQ7Bed62D3MhGNh13CwpsKU1Amxk+GOKiEe3Qagnb16ujXzIlWO5+AR2jRINTjvCkospRsuFNf7neY3Dt+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dell\\project\\Skyway_videocall_android\\Skyway_videocall_android\\Skyway_videocall_android.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\square.okhttp3\\4.11.0.2\\square.okhttp3.4.11.0.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\square.okhttp3.logginginterceptor\\4.10.0.1\\square.okhttp3.logginginterceptor.4.10.0.1.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\square.okio\\3.3.0.2\\square.okio.3.3.0.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\square.okio.jvm\\3.3.0.2\\square.okio.jvm.3.3.0.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xamarin.jetbrains.annotations\\24.0.1.2\\xamarin.jetbrains.annotations.24.0.1.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xamarin.kotlin.stdlib\\1.9.0\\xamarin.kotlin.stdlib.1.9.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xamarin.kotlin.stdlib.common\\1.9.0\\xamarin.kotlin.stdlib.common.1.9.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk7\\1.9.0\\xamarin.kotlin.stdlib.jdk7.1.9.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.9.0\\xamarin.kotlin.stdlib.jdk8.1.9.0.nupkg.sha512"
+  ],
   "logs": []
 }
