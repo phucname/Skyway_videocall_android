@@ -136,6 +136,45 @@ namespace Com.Ntt.Skyway.Room.Member {
 			}
 		}
 
+		static Delegate? cb_publish_Lcom_ntt_skyway_core_content_local_LocalStream_Lcom_ntt_skyway_room_RoomPublication_Options_Lkotlin_coroutines_Continuation_;
+#pragma warning disable 0169
+		static Delegate GetPublish_Lcom_ntt_skyway_core_content_local_LocalStream_Lcom_ntt_skyway_room_RoomPublication_Options_Lkotlin_coroutines_Continuation_Handler ()
+		{
+			if (cb_publish_Lcom_ntt_skyway_core_content_local_LocalStream_Lcom_ntt_skyway_room_RoomPublication_Options_Lkotlin_coroutines_Continuation_ == null)
+				cb_publish_Lcom_ntt_skyway_core_content_local_LocalStream_Lcom_ntt_skyway_room_RoomPublication_Options_Lkotlin_coroutines_Continuation_ = JNINativeWrapper.CreateDelegate ((_JniMarshal_PPLLL_L) n_Publish_Lcom_ntt_skyway_core_content_local_LocalStream_Lcom_ntt_skyway_room_RoomPublication_Options_Lkotlin_coroutines_Continuation_);
+			return cb_publish_Lcom_ntt_skyway_core_content_local_LocalStream_Lcom_ntt_skyway_room_RoomPublication_Options_Lkotlin_coroutines_Continuation_;
+		}
+
+		static IntPtr n_Publish_Lcom_ntt_skyway_core_content_local_LocalStream_Lcom_ntt_skyway_room_RoomPublication_Options_Lkotlin_coroutines_Continuation_ (IntPtr jnienv, IntPtr native__this, IntPtr native_localStream, IntPtr native_options, IntPtr native__completion)
+		{
+			var __this = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Room.Member.LocalRoomMember> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
+			var localStream = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Content.Local.LocalStream> (native_localStream, JniHandleOwnership.DoNotTransfer);
+			var options = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Room.RoomPublication.Options> (native_options, JniHandleOwnership.DoNotTransfer);
+			var _completion = (global::Kotlin.Coroutines.IContinuation?)global::Java.Lang.Object.GetObject<global::Kotlin.Coroutines.IContinuation> (native__completion, JniHandleOwnership.DoNotTransfer);
+			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.Publish (localStream!, options, _completion!));
+			return __ret;
+		}
+#pragma warning restore 0169
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='LocalRoomMember']/method[@name='publish' and count(parameter)=3 and parameter[1][@type='com.ntt.skyway.core.content.local.LocalStream'] and parameter[2][@type='com.ntt.skyway.room.RoomPublication.Options'] and parameter[3][@type='kotlin.coroutines.Continuation&lt;? super com.ntt.skyway.room.RoomPublication&gt;']]"
+		[Register ("publish", "(Lcom/ntt/skyway/core/content/local/LocalStream;Lcom/ntt/skyway/room/RoomPublication$Options;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "GetPublish_Lcom_ntt_skyway_core_content_local_LocalStream_Lcom_ntt_skyway_room_RoomPublication_Options_Lkotlin_coroutines_Continuation_Handler")]
+		public virtual unsafe global::Java.Lang.Object? Publish (global::Com.Ntt.Skyway.Core.Content.Local.LocalStream localStream, global::Com.Ntt.Skyway.Room.RoomPublication.Options? options, global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "publish.(Lcom/ntt/skyway/core/content/local/LocalStream;Lcom/ntt/skyway/room/RoomPublication$Options;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [3];
+				__args [0] = new JniArgumentValue ((localStream == null) ? IntPtr.Zero : ((global::Java.Lang.Object) localStream).Handle);
+				__args [1] = new JniArgumentValue ((options == null) ? IntPtr.Zero : ((global::Java.Lang.Object) options).Handle);
+				__args [2] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.InstanceMethods.InvokeVirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				global::System.GC.KeepAlive (localStream);
+				global::System.GC.KeepAlive (options);
+				global::System.GC.KeepAlive (_completion);
+			}
+		}
+
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='LocalRoomMember']/method[@name='subscribe' and count(parameter)=3 and parameter[1][@type='com.ntt.skyway.room.RoomPublication'] and parameter[2][@type='com.ntt.skyway.room.RoomSubscription.Options'] and parameter[3][@type='kotlin.coroutines.Continuation&lt;? super com.ntt.skyway.room.RoomSubscription&gt;']]"
 		[Register ("subscribe", "(Lcom/ntt/skyway/room/RoomPublication;Lcom/ntt/skyway/room/RoomSubscription$Options;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
 		public unsafe global::Java.Lang.Object? Subscribe (global::Com.Ntt.Skyway.Room.RoomPublication publication, global::Com.Ntt.Skyway.Room.RoomSubscription.Options? options, global::Kotlin.Coroutines.IContinuation _completion)
@@ -207,6 +246,23 @@ namespace Com.Ntt.Skyway.Room.Member {
 				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
 			} finally {
 				global::System.GC.KeepAlive (publication);
+				global::System.GC.KeepAlive (_completion);
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='LocalRoomMember']/method[@name='unsubscribe' and count(parameter)=2 and parameter[1][@type='com.ntt.skyway.core.channel.Subscription'] and parameter[2][@type='kotlin.coroutines.Continuation&lt;? super java.lang.Boolean&gt;']]"
+		[Register ("unsubscribe", "(Lcom/ntt/skyway/core/channel/Subscription;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
+		public unsafe global::Java.Lang.Object? Unsubscribe (global::Com.Ntt.Skyway.Core.Channel.ISubscription subscription, global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "unsubscribe.(Lcom/ntt/skyway/core/channel/Subscription;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [2];
+				__args [0] = new JniArgumentValue ((subscription == null) ? IntPtr.Zero : ((global::Java.Lang.Object) subscription).Handle);
+				__args [1] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				global::System.GC.KeepAlive (subscription);
 				global::System.GC.KeepAlive (_completion);
 			}
 		}

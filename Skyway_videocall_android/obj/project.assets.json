@@ -560,19 +560,6 @@
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
-      "skyway_core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.9.10.2"
-        },
-        "compile": {
-          "bin/placeholder/skyway_core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/skyway_core.dll": {}
-        }
-      },
       "skyway_room/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -584,29 +571,6 @@
         },
         "runtime": {
           "bin/placeholder/skyway_room.dll": {}
-        }
-      },
-      "skyway_sfubot/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.9.10.2"
-        },
-        "compile": {
-          "bin/placeholder/skyway_sfubot.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/skyway_sfubot.dll": {}
-        }
-      },
-      "webrtc/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/webrtc.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/webrtc.dll": {}
         }
       }
     },
@@ -1169,19 +1133,6 @@
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
-      "skyway_core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.9.10.2"
-        },
-        "compile": {
-          "bin/placeholder/skyway_core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/skyway_core.dll": {}
-        }
-      },
       "skyway_room/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1193,29 +1144,6 @@
         },
         "runtime": {
           "bin/placeholder/skyway_room.dll": {}
-        }
-      },
-      "skyway_sfubot/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.9.10.2"
-        },
-        "compile": {
-          "bin/placeholder/skyway_sfubot.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/skyway_sfubot.dll": {}
-        }
-      },
-      "webrtc/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/webrtc.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/webrtc.dll": {}
         }
       }
     },
@@ -1778,19 +1706,6 @@
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
-      "skyway_core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.9.10.2"
-        },
-        "compile": {
-          "bin/placeholder/skyway_core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/skyway_core.dll": {}
-        }
-      },
       "skyway_room/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1802,29 +1717,6 @@
         },
         "runtime": {
           "bin/placeholder/skyway_room.dll": {}
-        }
-      },
-      "skyway_sfubot/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.9.10.2"
-        },
-        "compile": {
-          "bin/placeholder/skyway_sfubot.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/skyway_sfubot.dll": {}
-        }
-      },
-      "webrtc/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/webrtc.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/webrtc.dll": {}
         }
       }
     },
@@ -2387,19 +2279,6 @@
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
-      "skyway_core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.9.10.2"
-        },
-        "compile": {
-          "bin/placeholder/skyway_core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/skyway_core.dll": {}
-        }
-      },
       "skyway_room/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -2411,29 +2290,6 @@
         },
         "runtime": {
           "bin/placeholder/skyway_room.dll": {}
-        }
-      },
-      "skyway_sfubot/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.9.10.2"
-        },
-        "compile": {
-          "bin/placeholder/skyway_sfubot.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/skyway_sfubot.dll": {}
-        }
-      },
-      "webrtc/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/webrtc.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/webrtc.dll": {}
         }
       }
     },
@@ -2996,19 +2852,6 @@
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
-      "skyway_core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.9.10.2"
-        },
-        "compile": {
-          "bin/placeholder/skyway_core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/skyway_core.dll": {}
-        }
-      },
       "skyway_room/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -3020,29 +2863,6 @@
         },
         "runtime": {
           "bin/placeholder/skyway_room.dll": {}
-        }
-      },
-      "skyway_sfubot/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.9.10.2"
-        },
-        "compile": {
-          "bin/placeholder/skyway_sfubot.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/skyway_sfubot.dll": {}
-        }
-      },
-      "webrtc/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/webrtc.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/webrtc.dll": {}
         }
       }
     }
@@ -3743,25 +3563,10 @@
         "xamarin.kotlinx.coroutines.core.jvm.nuspec"
       ]
     },
-    "skyway_core/1.0.0": {
-      "type": "project",
-      "path": "../skyway_core/skyway_core.csproj",
-      "msbuildProject": "../skyway_core/skyway_core.csproj"
-    },
     "skyway_room/1.0.0": {
       "type": "project",
       "path": "../skyway_room/skyway_room.csproj",
       "msbuildProject": "../skyway_room/skyway_room.csproj"
-    },
-    "skyway_sfubot/1.0.0": {
-      "type": "project",
-      "path": "../skyway_sfubot/skyway_sfubot.csproj",
-      "msbuildProject": "../skyway_sfubot/skyway_sfubot.csproj"
-    },
-    "webrtc/1.0.0": {
-      "type": "project",
-      "path": "../webrtc/webrtc.csproj",
-      "msbuildProject": "../webrtc/webrtc.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3770,10 +3575,7 @@
       "Square.OkHttp3 >= 4.11.0.2",
       "Square.OkHttp3.LoggingInterceptor >= 4.10.0.1",
       "Xamarin.AndroidX.Core >= 1.12.0.2",
-      "skyway_core >= 1.0.0",
-      "skyway_room >= 1.0.0",
-      "skyway_sfubot >= 1.0.0",
-      "webrtc >= 1.0.0"
+      "skyway_room >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3809,17 +3611,8 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "projectReferences": {
-            "C:\\Users\\Dell\\project\\Skyway_videocall_android\\skyway_core\\skyway_core.csproj": {
-              "projectPath": "C:\\Users\\Dell\\project\\Skyway_videocall_android\\skyway_core\\skyway_core.csproj"
-            },
             "C:\\Users\\Dell\\project\\Skyway_videocall_android\\skyway_room\\skyway_room.csproj": {
               "projectPath": "C:\\Users\\Dell\\project\\Skyway_videocall_android\\skyway_room\\skyway_room.csproj"
-            },
-            "C:\\Users\\Dell\\project\\Skyway_videocall_android\\skyway_sfubot\\skyway_sfubot.csproj": {
-              "projectPath": "C:\\Users\\Dell\\project\\Skyway_videocall_android\\skyway_sfubot\\skyway_sfubot.csproj"
-            },
-            "C:\\Users\\Dell\\project\\Skyway_videocall_android\\webrtc\\webrtc.csproj": {
-              "projectPath": "C:\\Users\\Dell\\project\\Skyway_videocall_android\\webrtc\\webrtc.csproj"
             }
           }
         }

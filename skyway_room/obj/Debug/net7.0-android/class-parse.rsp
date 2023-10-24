@@ -1,2 +1,5 @@
 --o="obj\Debug\net7.0-android\api.xml.class-parse"
+"obj\Debug\net7.0-android\library_project_jars\libwebrtc.aar\classes.jar"
+"obj\Debug\net7.0-android\library_project_jars\skyway-core.aar\classes.jar"
 "obj\Debug\net7.0-android\library_project_jars\skyway-room.aar\classes.jar"
+"obj\Debug\net7.0-android\library_project_jars\skyway-sfubot.aar\classes.jar"

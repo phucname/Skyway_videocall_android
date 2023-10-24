@@ -56,6 +56,64 @@ namespace Com.Ntt.Skyway.Room {
 				}
 			}
 
+			// Metadata.xml XPath constructor reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication.Options']/constructor[@name='RoomPublication.Options' and count(parameter)=5 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.util.List&lt;com.ntt.skyway.core.content.Codec&gt;'] and parameter[3][@type='java.util.List&lt;com.ntt.skyway.core.content.Encoding&gt;'] and parameter[4][@type='java.lang.Boolean'] and parameter[5][@type='int']]"
+			[Register (".ctor", "(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;I)V", "")]
+			public unsafe Options (string? metadata, global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Content.Codec>? codecCapabilities, global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Content.Encoding>? encodings, global::Java.Lang.Boolean? isEnabled, int maxSubscribers) : base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
+			{
+				const string __id = "(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;I)V";
+
+				if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
+					return;
+
+				IntPtr native_metadata = JNIEnv.NewString ((string?)metadata);
+				IntPtr native_codecCapabilities = global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Content.Codec>.ToLocalJniHandle (codecCapabilities);
+				IntPtr native_encodings = global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Content.Encoding>.ToLocalJniHandle (encodings);
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [5];
+					__args [0] = new JniArgumentValue (native_metadata);
+					__args [1] = new JniArgumentValue (native_codecCapabilities);
+					__args [2] = new JniArgumentValue (native_encodings);
+					__args [3] = new JniArgumentValue ((isEnabled == null) ? IntPtr.Zero : ((global::Java.Lang.Object) isEnabled).Handle);
+					__args [4] = new JniArgumentValue (maxSubscribers);
+					var __r = _members.InstanceMethods.StartCreateInstance (__id, ((object) this).GetType (), __args);
+					SetHandle (__r.Handle, JniHandleOwnership.TransferLocalRef);
+					_members.InstanceMethods.FinishCreateInstance (__id, this, __args);
+				} finally {
+					JNIEnv.DeleteLocalRef (native_metadata);
+					JNIEnv.DeleteLocalRef (native_codecCapabilities);
+					JNIEnv.DeleteLocalRef (native_encodings);
+					global::System.GC.KeepAlive (codecCapabilities);
+					global::System.GC.KeepAlive (encodings);
+					global::System.GC.KeepAlive (isEnabled);
+				}
+			}
+
+			public unsafe global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Content.Codec>? CodecCapabilities {
+				// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication.Options']/method[@name='getCodecCapabilities' and count(parameter)=0]"
+				[Register ("getCodecCapabilities", "()Ljava/util/List;", "")]
+				get {
+					const string __id = "getCodecCapabilities.()Ljava/util/List;";
+					try {
+						var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+						return global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Content.Codec>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+					} finally {
+					}
+				}
+			}
+
+			public unsafe global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Content.Encoding>? Encodings {
+				// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication.Options']/method[@name='getEncodings' and count(parameter)=0]"
+				[Register ("getEncodings", "()Ljava/util/List;", "")]
+				get {
+					const string __id = "getEncodings.()Ljava/util/List;";
+					try {
+						var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+						return global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Content.Encoding>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+					} finally {
+					}
+				}
+			}
+
 			public unsafe int MaxSubscribers {
 				// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication.Options']/method[@name='getMaxSubscribers' and count(parameter)=0]"
 				[Register ("getMaxSubscribers", "()I", "")]
@@ -94,6 +152,30 @@ namespace Com.Ntt.Skyway.Room {
 				}
 			}
 
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication.Options']/method[@name='component2' and count(parameter)=0]"
+			[Register ("component2", "()Ljava/util/List;", "")]
+			public unsafe global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Content.Codec>? Component2 ()
+			{
+				const string __id = "component2.()Ljava/util/List;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Content.Codec>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication.Options']/method[@name='component3' and count(parameter)=0]"
+			[Register ("component3", "()Ljava/util/List;", "")]
+			public unsafe global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Content.Encoding>? Component3 ()
+			{
+				const string __id = "component3.()Ljava/util/List;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Content.Encoding>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication.Options']/method[@name='component4' and count(parameter)=0]"
 			[Register ("component4", "()Ljava/lang/Boolean;", "")]
 			public unsafe global::Java.Lang.Boolean? Component4 ()
@@ -115,6 +197,33 @@ namespace Com.Ntt.Skyway.Room {
 					var __rm = _members.InstanceMethods.InvokeNonvirtualInt32Method (__id, this, null);
 					return __rm;
 				} finally {
+				}
+			}
+
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication.Options']/method[@name='copy' and count(parameter)=5 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.util.List&lt;com.ntt.skyway.core.content.Codec&gt;'] and parameter[3][@type='java.util.List&lt;com.ntt.skyway.core.content.Encoding&gt;'] and parameter[4][@type='java.lang.Boolean'] and parameter[5][@type='int']]"
+			[Register ("copy", "(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;I)Lcom/ntt/skyway/room/RoomPublication$Options;", "")]
+			public unsafe global::Com.Ntt.Skyway.Room.RoomPublication.Options Copy (string? metadata, global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Content.Codec>? codecCapabilities, global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Content.Encoding>? encodings, global::Java.Lang.Boolean? isEnabled, int maxSubscribers)
+			{
+				const string __id = "copy.(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;I)Lcom/ntt/skyway/room/RoomPublication$Options;";
+				IntPtr native_metadata = JNIEnv.NewString ((string?)metadata);
+				IntPtr native_codecCapabilities = global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Content.Codec>.ToLocalJniHandle (codecCapabilities);
+				IntPtr native_encodings = global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Content.Encoding>.ToLocalJniHandle (encodings);
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [5];
+					__args [0] = new JniArgumentValue (native_metadata);
+					__args [1] = new JniArgumentValue (native_codecCapabilities);
+					__args [2] = new JniArgumentValue (native_encodings);
+					__args [3] = new JniArgumentValue ((isEnabled == null) ? IntPtr.Zero : ((global::Java.Lang.Object) isEnabled).Handle);
+					__args [4] = new JniArgumentValue (maxSubscribers);
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Room.RoomPublication.Options> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+				} finally {
+					JNIEnv.DeleteLocalRef (native_metadata);
+					JNIEnv.DeleteLocalRef (native_codecCapabilities);
+					JNIEnv.DeleteLocalRef (native_encodings);
+					global::System.GC.KeepAlive (codecCapabilities);
+					global::System.GC.KeepAlive (encodings);
+					global::System.GC.KeepAlive (isEnabled);
 				}
 			}
 
@@ -158,6 +267,45 @@ namespace Com.Ntt.Skyway.Room {
 
 		internal RoomPublication (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer)
 		{
+		}
+
+		public unsafe global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Content.Codec> CodecCapabilities {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication']/method[@name='getCodecCapabilities' and count(parameter)=0]"
+			[Register ("getCodecCapabilities", "()Ljava/util/List;", "")]
+			get {
+				const string __id = "getCodecCapabilities.()Ljava/util/List;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Content.Codec>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+				} finally {
+				}
+			}
+		}
+
+		public unsafe global::Com.Ntt.Skyway.Core.Content.Stream.ContentType ContentType {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication']/method[@name='getContentType' and count(parameter)=0]"
+			[Register ("getContentType", "()Lcom/ntt/skyway/core/content/Stream$ContentType;", "")]
+			get {
+				const string __id = "getContentType.()Lcom/ntt/skyway/core/content/Stream$ContentType;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Content.Stream.ContentType> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+				} finally {
+				}
+			}
+		}
+
+		public unsafe global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Content.Encoding> Encodings {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication']/method[@name='getEncodings' and count(parameter)=0]"
+			[Register ("getEncodings", "()Ljava/util/List;", "")]
+			get {
+				const string __id = "getEncodings.()Ljava/util/List;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Content.Encoding>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+				} finally {
+				}
+			}
 		}
 
 		public unsafe string Id {
@@ -412,6 +560,32 @@ namespace Com.Ntt.Skyway.Room {
 			}
 		}
 
+		public unsafe global::Com.Ntt.Skyway.Core.Channel.IPublication.State State {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication']/method[@name='getState' and count(parameter)=0]"
+			[Register ("getState", "()Lcom/ntt/skyway/core/channel/Publication$State;", "")]
+			get {
+				const string __id = "getState.()Lcom/ntt/skyway/core/channel/Publication$State;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.IPublication.State> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+				} finally {
+				}
+			}
+		}
+
+		public unsafe global::Com.Ntt.Skyway.Core.Content.Stream? Stream {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication']/method[@name='getStream' and count(parameter)=0]"
+			[Register ("getStream", "()Lcom/ntt/skyway/core/content/Stream;", "")]
+			get {
+				const string __id = "getStream.()Lcom/ntt/skyway/core/content/Stream;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Content.Stream> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+		}
+
 		public unsafe global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Room.RoomSubscription> Subscriptions {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication']/method[@name='getSubscriptions' and count(parameter)=0]"
 			[Register ("getSubscriptions", "()Ljava/util/List;", "")]
@@ -467,6 +641,52 @@ namespace Com.Ntt.Skyway.Room {
 				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
 			} finally {
 				global::System.GC.KeepAlive (_completion);
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication']/method[@name='getStats' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+		[Register ("getStats", "(Ljava/lang/String;)Lcom/ntt/skyway/core/content/WebRTCStats;", "")]
+		public unsafe global::Com.Ntt.Skyway.Core.Content.WebRTCStats? GetStats (string remoteMemberId)
+		{
+			const string __id = "getStats.(Ljava/lang/String;)Lcom/ntt/skyway/core/content/WebRTCStats;";
+			IntPtr native_remoteMemberId = JNIEnv.NewString ((string?)remoteMemberId);
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue (native_remoteMemberId);
+				var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Content.WebRTCStats> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				JNIEnv.DeleteLocalRef (native_remoteMemberId);
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication']/method[@name='replaceStream' and count(parameter)=1 and parameter[1][@type='com.ntt.skyway.core.content.local.LocalStream']]"
+		[Register ("replaceStream", "(Lcom/ntt/skyway/core/content/local/LocalStream;)V", "")]
+		public unsafe void ReplaceStream (global::Com.Ntt.Skyway.Core.Content.Local.LocalStream stream)
+		{
+			const string __id = "replaceStream.(Lcom/ntt/skyway/core/content/local/LocalStream;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((stream == null) ? IntPtr.Zero : ((global::Java.Lang.Object) stream).Handle);
+				_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+			} finally {
+				global::System.GC.KeepAlive (stream);
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomPublication']/method[@name='updateEncodings' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;com.ntt.skyway.core.content.Encoding&gt;']]"
+		[Register ("updateEncodings", "(Ljava/util/List;)V", "")]
+		public unsafe void UpdateEncodings (global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Content.Encoding> encodings)
+		{
+			const string __id = "updateEncodings.(Ljava/util/List;)V";
+			IntPtr native_encodings = global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Content.Encoding>.ToLocalJniHandle (encodings);
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue (native_encodings);
+				_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+			} finally {
+				JNIEnv.DeleteLocalRef (native_encodings);
+				global::System.GC.KeepAlive (encodings);
 			}
 		}
 

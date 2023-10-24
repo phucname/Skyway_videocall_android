@@ -148,6 +148,19 @@ namespace Com.Ntt.Skyway.Room {
 		{
 		}
 
+		public unsafe global::Com.Ntt.Skyway.Core.Content.Stream.ContentType ContentType {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomSubscription']/method[@name='getContentType' and count(parameter)=0]"
+			[Register ("getContentType", "()Lcom/ntt/skyway/core/content/Stream$ContentType;", "")]
+			get {
+				const string __id = "getContentType.()Lcom/ntt/skyway/core/content/Stream$ContentType;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Content.Stream.ContentType> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+				} finally {
+				}
+			}
+		}
+
 		public unsafe string Id {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomSubscription']/method[@name='getId' and count(parameter)=0]"
 			[Register ("getId", "()Ljava/lang/String;", "")]
@@ -245,6 +258,45 @@ namespace Com.Ntt.Skyway.Room {
 				try {
 					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
 					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Room.Room> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+				} finally {
+				}
+			}
+		}
+
+		public unsafe global::Com.Ntt.Skyway.Core.Channel.ISubscription.State State {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomSubscription']/method[@name='getState' and count(parameter)=0]"
+			[Register ("getState", "()Lcom/ntt/skyway/core/channel/Subscription$State;", "")]
+			get {
+				const string __id = "getState.()Lcom/ntt/skyway/core/channel/Subscription$State;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.ISubscription.State> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+				} finally {
+				}
+			}
+		}
+
+		public unsafe global::Com.Ntt.Skyway.Core.Content.WebRTCStats? Stats {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomSubscription']/method[@name='getStats' and count(parameter)=0]"
+			[Register ("getStats", "()Lcom/ntt/skyway/core/content/WebRTCStats;", "")]
+			get {
+				const string __id = "getStats.()Lcom/ntt/skyway/core/content/WebRTCStats;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Content.WebRTCStats> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+		}
+
+		public unsafe global::Com.Ntt.Skyway.Core.Content.Remote.RemoteStream? Stream {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomSubscription']/method[@name='getStream' and count(parameter)=0]"
+			[Register ("getStream", "()Lcom/ntt/skyway/core/content/remote/RemoteStream;", "")]
+			get {
+				const string __id = "getStream.()Lcom/ntt/skyway/core/content/remote/RemoteStream;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Content.Remote.RemoteStream> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
 				} finally {
 				}
 			}

@@ -98,9 +98,5 @@ namespace Com.Ntt.Skyway.Plugin.RemotePerson {
 			}
 		}
 
-        public override Type GetType()
-        {
-            throw new NotImplementedException();
-        }
-    }
+	}
 }

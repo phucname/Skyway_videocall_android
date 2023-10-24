@@ -16,9 +16,6 @@
     <PackageReference Include="Xamarin.AndroidX.Core" Version="1.12.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\skyway_core\skyway_core.csproj" />
     <ProjectReference Include="..\skyway_room\skyway_room.csproj" />
-    <ProjectReference Include="..\skyway_sfubot\skyway_sfubot.csproj" />
-    <ProjectReference Include="..\webrtc\webrtc.csproj" />
   </ItemGroup>
 </Project>

@@ -8,6 +8,7 @@ using Com.Ntt.Skyway.Core.Content.Local;
 using Com.Ntt.Skyway.Core.Content.Local.Source;
 using Com.Ntt.Skyway.Core.Content.Sink;
 using Com.Ntt.Skyway.Core.Util;
+using Com.Ntt.Skyway.Room;
 using Com.Ntt.Skyway.Room.Member;
 using Com.Ntt.Skyway.Room.P2p;
 using Kotlin.Coroutines;
@@ -27,7 +28,8 @@ namespace Skyway_videocall_android
         RoomMember.Init memberInit;
         LocalVideoStream? localVideoStream = null;
         LocalDataStream? localDataStream = null;
-
+        RoomPublication publication = null;
+        RoomSubscription roomSubscription = null;
         protected override void OnCreate(Bundle? savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -55,25 +57,40 @@ namespace Skyway_videocall_android
 
         private void CreateRoomP2p()
         {
+
             SurfaceViewRenderer surfaceViewRenderer = (SurfaceViewRenderer)FindViewById(Resource.Id.local_renderer);
-            surfaceViewRenderer.Setup = true;
+            surfaceViewRenderer.InvokeSetup(SurfaceViewRenderer.LayoutParam.FillParent, SurfaceViewRenderer.LayoutParam.FillParent);
             if (checkConnect == true)
             {
                 Object room = P2PRoom.FindOrCreate("ccj", null, continuation);
                 Console.WriteLine(room.GetType());
-
             }
-
-            //p2PRoomManager.localPerson = (LocalP2PRoomMember)p2PRoomManager.room.Join(memberInit, continuation);
-            //Intent intent = new Intent(this, typeof(Activity1));
-            //StartActivity(intent);
             CameraSource.CapturingOptions capturingOptions = new CameraSource.CapturingOptions(800, 800, 1);
             var device = CameraSource.GetFrontCameras(Application.ApplicationContext).First();
             CameraSource.StartCapturing(Application.ApplicationContext, device, capturingOptions);
             localVideoStream = CameraSource.Instance.CreateStream();
-            // Render render = new Render();
-            //  render.Setup = true;
+            // RFender render = new RFender();
             localVideoStream.AddRenderer(surfaceViewRenderer);
+            publishCameraVideoStream();
+            subscribeToCurren();
+        }
+
+
+        private void publishCameraVideoStream()
+        {
+            Task.Run(() =>
+            {
+                // p2PRoomManager.localPerson.
+            });
+        }
+        public void subscribeToCurren()
+        {
+            //  subscribeToPublication(p2PRoomManager.room.Publications);
+        }
+
+        private void subscribeToPublication(ICollection<RoomPublication> publications)
+        {
+            //   roomSubscription = p2PRoomManager.localPerson.Subscribe(publications, null, continuation);
         }
 
         public void CheckPermission()
@@ -151,14 +168,7 @@ namespace Skyway_videocall_android
             }
 
         }
-        public class RFender : Java.Lang.Object, IRenderer
-        {
-            public bool Setup
-            {
-                get => throw new NotImplementedException();
-                set => throw new NotImplementedException();
-            }
-        }
+
 
     }
 

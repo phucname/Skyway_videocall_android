@@ -354,6 +354,48 @@ namespace Com.Ntt.Skyway.Room.Member {
 			}
 		}
 
+		static Delegate? cb_getSide;
+#pragma warning disable 0169
+		static Delegate GetGetSideHandler ()
+		{
+			if (cb_getSide == null)
+				cb_getSide = JNINativeWrapper.CreateDelegate ((_JniMarshal_PP_L) n_GetSide);
+			return cb_getSide;
+		}
+
+		static IntPtr n_GetSide (IntPtr jnienv, IntPtr native__this)
+		{
+			var __this = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Room.Member.RoomMember> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
+			return JNIEnv.ToLocalJniHandle (__this.Side);
+		}
+#pragma warning restore 0169
+
+		public virtual unsafe global::Com.Ntt.Skyway.Core.Channel.Member.IMember.Side Side {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RoomMember']/method[@name='getSide' and count(parameter)=0]"
+			[Register ("getSide", "()Lcom/ntt/skyway/core/channel/member/Member$Side;", "GetGetSideHandler")]
+			get {
+				const string __id = "getSide.()Lcom/ntt/skyway/core/channel/member/Member$Side;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeVirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.IMember.Side> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+				} finally {
+				}
+			}
+		}
+
+		public unsafe global::Com.Ntt.Skyway.Core.Channel.Member.IMember.State State {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RoomMember']/method[@name='getState' and count(parameter)=0]"
+			[Register ("getState", "()Lcom/ntt/skyway/core/channel/member/Member$State;", "")]
+			get {
+				const string __id = "getState.()Lcom/ntt/skyway/core/channel/member/Member$State;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.IMember.State> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+				} finally {
+				}
+			}
+		}
+
 		public unsafe global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Room.RoomSubscription> Subscriptions {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RoomMember']/method[@name='getSubscriptions' and count(parameter)=0]"
 			[Register ("getSubscriptions", "()Ljava/util/List;", "")]

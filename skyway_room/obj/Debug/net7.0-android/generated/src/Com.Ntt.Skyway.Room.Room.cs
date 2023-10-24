@@ -599,6 +599,19 @@ namespace Com.Ntt.Skyway.Room {
 			}
 		}
 
+		public unsafe global::Com.Ntt.Skyway.Core.Channel.IChannel.State State {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='Room']/method[@name='getState' and count(parameter)=0]"
+			[Register ("getState", "()Lcom/ntt/skyway/core/channel/Channel$State;", "")]
+			get {
+				const string __id = "getState.()Lcom/ntt/skyway/core/channel/Channel$State;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.IChannel.State> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+				} finally {
+				}
+			}
+		}
+
 		public unsafe global::System.Collections.Generic.ICollection<global::Com.Ntt.Skyway.Room.RoomSubscription> Subscriptions {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='Room']/method[@name='getSubscriptions' and count(parameter)=0]"
 			[Register ("getSubscriptions", "()Ljava/util/Set;", "")]

@@ -6,7 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="libwebrtc.aar" />
+    <None Remove="skyway-core.aar" />
     <None Remove="skyway-room.aar" />
+    <None Remove="skyway-sfubot.aar" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.9.10.2" />

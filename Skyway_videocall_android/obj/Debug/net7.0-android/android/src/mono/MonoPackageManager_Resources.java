@@ -32,10 +32,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Kotlin.StdLib.Jdk8.dll",
 		"Xamarin.KotlinX.Coroutines.Android.dll",
 		"Xamarin.KotlinX.Coroutines.Core.Jvm.dll",
-		"skyway_core.dll",
 		"skyway_room.dll",
-		"skyway_sfubot.dll",
-		"webrtc.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

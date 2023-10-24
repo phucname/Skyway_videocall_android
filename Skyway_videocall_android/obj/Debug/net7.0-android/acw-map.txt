@@ -4,9 +4,6 @@ skyway_videocall_android.MainActivity;crc643868841340d29366.MainActivity
 Skyway_videocall_android.MainActivity+Continuation, Skyway_videocall_android;crc643868841340d29366.MainActivity_Continuation
 Skyway_videocall_android.MainActivity.Continuation;crc643868841340d29366.MainActivity_Continuation
 skyway_videocall_android.MainActivity_Continuation;crc643868841340d29366.MainActivity_Continuation
-Skyway_videocall_android.MainActivity+RFender, Skyway_videocall_android;crc643868841340d29366.MainActivity_RFender
-Skyway_videocall_android.MainActivity.RFender;crc643868841340d29366.MainActivity_RFender
-skyway_videocall_android.MainActivity_RFender;crc643868841340d29366.MainActivity_RFender
 GoogleGson.IExclusionStrategy, GoogleGson;com.google.gson.ExclusionStrategy
 GoogleGson.IExclusionStrategy;com.google.gson.ExclusionStrategy
 com.google.gson.ExclusionStrategy;com.google.gson.ExclusionStrategy
@@ -1543,240 +1540,252 @@ kotlinx.coroutines.channels.ReceiveChannel;kotlinx.coroutines.channels.ReceiveCh
 Xamarin.KotlinX.Coroutines.Channels.ISendChannel, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.channels.SendChannel
 Xamarin.KotlinX.Coroutines.Channels.ISendChannel;kotlinx.coroutines.channels.SendChannel
 kotlinx.coroutines.channels.SendChannel;kotlinx.coroutines.channels.SendChannel
-Com.Ntt.Skyway.Plugin.IPlugin, skyway_core;com.ntt.skyway.plugin.Plugin
-Com.Ntt.Skyway.Plugin.IPlugin;com.ntt.skyway.plugin.Plugin
-com.ntt.skyway.plugin.Plugin;com.ntt.skyway.plugin.Plugin
-Com.Ntt.Skyway.Core.ISkyWayOptIn, skyway_core;com.ntt.skyway.core.SkyWayOptIn
-Com.Ntt.Skyway.Core.ISkyWayOptIn;com.ntt.skyway.core.SkyWayOptIn
-com.ntt.skyway.core.SkyWayOptIn;com.ntt.skyway.core.SkyWayOptIn
-Com.Ntt.Skyway.Core.Content.Sink.IRenderer, skyway_core;com.ntt.skyway.core.content.sink.Renderer
-Com.Ntt.Skyway.Core.Content.Sink.IRenderer;com.ntt.skyway.core.content.sink.Renderer
-com.ntt.skyway.core.content.sink.Renderer;com.ntt.skyway.core.content.sink.Renderer
-Org.Webrtc.DataChannel+IObserver, webrtc;org.webrtc.DataChannel$Observer
+Org.Webrtc.DataChannel+IObserver, skyway_room;org.webrtc.DataChannel$Observer
 Org.Webrtc.DataChannel.IObserver;org.webrtc.DataChannel$Observer
 org.webrtc.DataChannel$Observer;org.webrtc.DataChannel$Observer
-Org.Webrtc.EglRenderer+IErrorCallback, webrtc;org.webrtc.EglRenderer$ErrorCallback
+Org.Webrtc.EglRenderer+IErrorCallback, skyway_room;org.webrtc.EglRenderer$ErrorCallback
 Org.Webrtc.EglRenderer.IErrorCallback;org.webrtc.EglRenderer$ErrorCallback
 org.webrtc.EglRenderer$ErrorCallback;org.webrtc.EglRenderer$ErrorCallback
-Org.Webrtc.EglRenderer+IFrameListener, webrtc;org.webrtc.EglRenderer$FrameListener
+Org.Webrtc.EglRenderer+IFrameListener, skyway_room;org.webrtc.EglRenderer$FrameListener
 Org.Webrtc.EglRenderer.IFrameListener;org.webrtc.EglRenderer$FrameListener
 org.webrtc.EglRenderer$FrameListener;org.webrtc.EglRenderer$FrameListener
-Org.Webrtc.EglRenderer+IFrameListenerImplementor, webrtc;mono.org.webrtc.EglRenderer_FrameListenerImplementor
+Org.Webrtc.EglRenderer+IFrameListenerImplementor, skyway_room;mono.org.webrtc.EglRenderer_FrameListenerImplementor
 Org.Webrtc.EglRenderer.IFrameListenerImplementor;mono.org.webrtc.EglRenderer_FrameListenerImplementor
 mono.org.webrtc.EglRenderer_FrameListenerImplementor;mono.org.webrtc.EglRenderer_FrameListenerImplementor
-Org.Webrtc.IAddIceObserver, webrtc;org.webrtc.AddIceObserver
+Org.Webrtc.IAddIceObserver, skyway_room;org.webrtc.AddIceObserver
 Org.Webrtc.IAddIceObserver;org.webrtc.AddIceObserver
 org.webrtc.AddIceObserver;org.webrtc.AddIceObserver
-Org.Webrtc.IAudioDecoderFactoryFactory, webrtc;org.webrtc.AudioDecoderFactoryFactory
+Org.Webrtc.IAudioDecoderFactoryFactory, skyway_room;org.webrtc.AudioDecoderFactoryFactory
 Org.Webrtc.IAudioDecoderFactoryFactory;org.webrtc.AudioDecoderFactoryFactory
 org.webrtc.AudioDecoderFactoryFactory;org.webrtc.AudioDecoderFactoryFactory
-Org.Webrtc.IAudioEncoderFactoryFactory, webrtc;org.webrtc.AudioEncoderFactoryFactory
+Org.Webrtc.IAudioEncoderFactoryFactory, skyway_room;org.webrtc.AudioEncoderFactoryFactory
 Org.Webrtc.IAudioEncoderFactoryFactory;org.webrtc.AudioEncoderFactoryFactory
 org.webrtc.AudioEncoderFactoryFactory;org.webrtc.AudioEncoderFactoryFactory
-Org.Webrtc.IAudioProcessingFactory, webrtc;org.webrtc.AudioProcessingFactory
+Org.Webrtc.IAudioProcessingFactory, skyway_room;org.webrtc.AudioProcessingFactory
 Org.Webrtc.IAudioProcessingFactory;org.webrtc.AudioProcessingFactory
 org.webrtc.AudioProcessingFactory;org.webrtc.AudioProcessingFactory
-Org.Webrtc.ICalledByNative, webrtc;org.webrtc.CalledByNative
+Org.Webrtc.ICalledByNative, skyway_room;org.webrtc.CalledByNative
 Org.Webrtc.ICalledByNative;org.webrtc.CalledByNative
 org.webrtc.CalledByNative;org.webrtc.CalledByNative
-Org.Webrtc.ICalledByNativeUnchecked, webrtc;org.webrtc.CalledByNativeUnchecked
+Org.Webrtc.ICalledByNativeUnchecked, skyway_room;org.webrtc.CalledByNativeUnchecked
 Org.Webrtc.ICalledByNativeUnchecked;org.webrtc.CalledByNativeUnchecked
 org.webrtc.CalledByNativeUnchecked;org.webrtc.CalledByNativeUnchecked
-Org.Webrtc.ICameraEnumerator, webrtc;org.webrtc.CameraEnumerator
+Org.Webrtc.ICameraEnumerator, skyway_room;org.webrtc.CameraEnumerator
 Org.Webrtc.ICameraEnumerator;org.webrtc.CameraEnumerator
 org.webrtc.CameraEnumerator;org.webrtc.CameraEnumerator
-Org.Webrtc.ICameraVideoCapturer, webrtc;org.webrtc.CameraVideoCapturer
+Org.Webrtc.ICameraVideoCapturer, skyway_room;org.webrtc.CameraVideoCapturer
 Org.Webrtc.ICameraVideoCapturer;org.webrtc.CameraVideoCapturer
 org.webrtc.CameraVideoCapturer;org.webrtc.CameraVideoCapturer
-Org.Webrtc.ICameraVideoCapturer+ICameraEventsHandler, webrtc;org.webrtc.CameraVideoCapturer$CameraEventsHandler
+Org.Webrtc.ICameraVideoCapturer+ICameraEventsHandler, skyway_room;org.webrtc.CameraVideoCapturer$CameraEventsHandler
 Org.Webrtc.ICameraVideoCapturer.ICameraEventsHandler;org.webrtc.CameraVideoCapturer$CameraEventsHandler
 org.webrtc.CameraVideoCapturer$CameraEventsHandler;org.webrtc.CameraVideoCapturer$CameraEventsHandler
-Org.Webrtc.ICameraVideoCapturer+ICameraSwitchHandler, webrtc;org.webrtc.CameraVideoCapturer$CameraSwitchHandler
+Org.Webrtc.ICameraVideoCapturer+ICameraSwitchHandler, skyway_room;org.webrtc.CameraVideoCapturer$CameraSwitchHandler
 Org.Webrtc.ICameraVideoCapturer.ICameraSwitchHandler;org.webrtc.CameraVideoCapturer$CameraSwitchHandler
 org.webrtc.CameraVideoCapturer$CameraSwitchHandler;org.webrtc.CameraVideoCapturer$CameraSwitchHandler
-Org.Webrtc.ICameraVideoCapturer+IMediaRecorderHandler, webrtc;org.webrtc.CameraVideoCapturer$MediaRecorderHandler
+Org.Webrtc.ICameraVideoCapturer+IMediaRecorderHandler, skyway_room;org.webrtc.CameraVideoCapturer$MediaRecorderHandler
 Org.Webrtc.ICameraVideoCapturer.IMediaRecorderHandler;org.webrtc.CameraVideoCapturer$MediaRecorderHandler
 org.webrtc.CameraVideoCapturer$MediaRecorderHandler;org.webrtc.CameraVideoCapturer$MediaRecorderHandler
-Org.Webrtc.ICapturerObserver, webrtc;org.webrtc.CapturerObserver
+Org.Webrtc.ICapturerObserver, skyway_room;org.webrtc.CapturerObserver
 Org.Webrtc.ICapturerObserver;org.webrtc.CapturerObserver
 org.webrtc.CapturerObserver;org.webrtc.CapturerObserver
-Org.Webrtc.IEglBase, webrtc;org.webrtc.EglBase
+Org.Webrtc.IEglBase, skyway_room;org.webrtc.EglBase
 Org.Webrtc.IEglBase;org.webrtc.EglBase
 org.webrtc.EglBase;org.webrtc.EglBase
-Org.Webrtc.IEglBase+IContext, webrtc;org.webrtc.EglBase$Context
+Org.Webrtc.IEglBase+IContext, skyway_room;org.webrtc.EglBase$Context
 Org.Webrtc.IEglBase.IContext;org.webrtc.EglBase$Context
 org.webrtc.EglBase$Context;org.webrtc.EglBase$Context
-Org.Webrtc.IEglBase10, webrtc;org.webrtc.EglBase10
+Org.Webrtc.IEglBase10, skyway_room;org.webrtc.EglBase10
 Org.Webrtc.IEglBase10;org.webrtc.EglBase10
 org.webrtc.EglBase10;org.webrtc.EglBase10
-Org.Webrtc.IEglBase10+IContext, webrtc;org.webrtc.EglBase10$Context
+Org.Webrtc.IEglBase10+IContext, skyway_room;org.webrtc.EglBase10$Context
 Org.Webrtc.IEglBase10.IContext;org.webrtc.EglBase10$Context
 org.webrtc.EglBase10$Context;org.webrtc.EglBase10$Context
-Org.Webrtc.IEglBase14, webrtc;org.webrtc.EglBase14
+Org.Webrtc.IEglBase14, skyway_room;org.webrtc.EglBase14
 Org.Webrtc.IEglBase14;org.webrtc.EglBase14
 org.webrtc.EglBase14;org.webrtc.EglBase14
-Org.Webrtc.IEglBase14+IContext, webrtc;org.webrtc.EglBase14$Context
+Org.Webrtc.IEglBase14+IContext, skyway_room;org.webrtc.EglBase14$Context
 Org.Webrtc.IEglBase14.IContext;org.webrtc.EglBase14$Context
 org.webrtc.EglBase14$Context;org.webrtc.EglBase14$Context
-Org.Webrtc.IFecControllerFactoryFactoryInterface, webrtc;org.webrtc.FecControllerFactoryFactoryInterface
+Org.Webrtc.IFecControllerFactoryFactoryInterface, skyway_room;org.webrtc.FecControllerFactoryFactoryInterface
 Org.Webrtc.IFecControllerFactoryFactoryInterface;org.webrtc.FecControllerFactoryFactoryInterface
 org.webrtc.FecControllerFactoryFactoryInterface;org.webrtc.FecControllerFactoryFactoryInterface
-Org.Webrtc.IFrameDecryptor, webrtc;org.webrtc.FrameDecryptor
+Org.Webrtc.IFrameDecryptor, skyway_room;org.webrtc.FrameDecryptor
 Org.Webrtc.IFrameDecryptor;org.webrtc.FrameDecryptor
 org.webrtc.FrameDecryptor;org.webrtc.FrameDecryptor
-Org.Webrtc.IFrameEncryptor, webrtc;org.webrtc.FrameEncryptor
+Org.Webrtc.IFrameEncryptor, skyway_room;org.webrtc.FrameEncryptor
 Org.Webrtc.IFrameEncryptor;org.webrtc.FrameEncryptor
 org.webrtc.FrameEncryptor;org.webrtc.FrameEncryptor
-Org.Webrtc.ILoggable, webrtc;org.webrtc.Loggable
+Org.Webrtc.ILoggable, skyway_room;org.webrtc.Loggable
 Org.Webrtc.ILoggable;org.webrtc.Loggable
 org.webrtc.Loggable;org.webrtc.Loggable
-Org.Webrtc.INativeLibraryLoader, webrtc;org.webrtc.NativeLibraryLoader
+Org.Webrtc.INativeLibraryLoader, skyway_room;org.webrtc.NativeLibraryLoader
 Org.Webrtc.INativeLibraryLoader;org.webrtc.NativeLibraryLoader
 org.webrtc.NativeLibraryLoader;org.webrtc.NativeLibraryLoader
-Org.Webrtc.INativePeerConnectionFactory, webrtc;org.webrtc.NativePeerConnectionFactory
+Org.Webrtc.INativePeerConnectionFactory, skyway_room;org.webrtc.NativePeerConnectionFactory
 Org.Webrtc.INativePeerConnectionFactory;org.webrtc.NativePeerConnectionFactory
 org.webrtc.NativePeerConnectionFactory;org.webrtc.NativePeerConnectionFactory
-Org.Webrtc.INetEqFactoryFactory, webrtc;org.webrtc.NetEqFactoryFactory
+Org.Webrtc.INetEqFactoryFactory, skyway_room;org.webrtc.NetEqFactoryFactory
 Org.Webrtc.INetEqFactoryFactory;org.webrtc.NetEqFactoryFactory
 org.webrtc.NetEqFactoryFactory;org.webrtc.NetEqFactoryFactory
-Org.Webrtc.INetworkChangeDetector, webrtc;org.webrtc.NetworkChangeDetector
+Org.Webrtc.INetworkChangeDetector, skyway_room;org.webrtc.NetworkChangeDetector
 Org.Webrtc.INetworkChangeDetector;org.webrtc.NetworkChangeDetector
 org.webrtc.NetworkChangeDetector;org.webrtc.NetworkChangeDetector
-Org.Webrtc.INetworkChangeDetectorFactory, webrtc;org.webrtc.NetworkChangeDetectorFactory
+Org.Webrtc.INetworkChangeDetectorFactory, skyway_room;org.webrtc.NetworkChangeDetectorFactory
 Org.Webrtc.INetworkChangeDetectorFactory;org.webrtc.NetworkChangeDetectorFactory
 org.webrtc.NetworkChangeDetectorFactory;org.webrtc.NetworkChangeDetectorFactory
-Org.Webrtc.INetworkControllerFactoryFactory, webrtc;org.webrtc.NetworkControllerFactoryFactory
+Org.Webrtc.INetworkControllerFactoryFactory, skyway_room;org.webrtc.NetworkControllerFactoryFactory
 Org.Webrtc.INetworkControllerFactoryFactory;org.webrtc.NetworkControllerFactoryFactory
 org.webrtc.NetworkControllerFactoryFactory;org.webrtc.NetworkControllerFactoryFactory
-Org.Webrtc.INetworkPreference, webrtc;org.webrtc.NetworkPreference
+Org.Webrtc.INetworkPreference, skyway_room;org.webrtc.NetworkPreference
 Org.Webrtc.INetworkPreference;org.webrtc.NetworkPreference
 org.webrtc.NetworkPreference;org.webrtc.NetworkPreference
-Org.Webrtc.INetworkStatePredictorFactoryFactory, webrtc;org.webrtc.NetworkStatePredictorFactoryFactory
+Org.Webrtc.INetworkStatePredictorFactoryFactory, skyway_room;org.webrtc.NetworkStatePredictorFactoryFactory
 Org.Webrtc.INetworkStatePredictorFactoryFactory;org.webrtc.NetworkStatePredictorFactoryFactory
 org.webrtc.NetworkStatePredictorFactoryFactory;org.webrtc.NetworkStatePredictorFactoryFactory
-Org.Webrtc.IPredicate, webrtc;org.webrtc.Predicate
+Org.Webrtc.IPredicate, skyway_room;org.webrtc.Predicate
 Org.Webrtc.IPredicate;org.webrtc.Predicate
 org.webrtc.Predicate;org.webrtc.Predicate
-Org.Webrtc.IPriority, webrtc;org.webrtc.Priority
+Org.Webrtc.IPriority, skyway_room;org.webrtc.Priority
 Org.Webrtc.IPriority;org.webrtc.Priority
 org.webrtc.Priority;org.webrtc.Priority
-Org.Webrtc.IRefCounted, webrtc;org.webrtc.RefCounted
+Org.Webrtc.IRefCounted, skyway_room;org.webrtc.RefCounted
 Org.Webrtc.IRefCounted;org.webrtc.RefCounted
 org.webrtc.RefCounted;org.webrtc.RefCounted
-Org.Webrtc.IRTCStatsCollectorCallback, webrtc;org.webrtc.RTCStatsCollectorCallback
+Org.Webrtc.IRTCStatsCollectorCallback, skyway_room;org.webrtc.RTCStatsCollectorCallback
 Org.Webrtc.IRTCStatsCollectorCallback;org.webrtc.RTCStatsCollectorCallback
 org.webrtc.RTCStatsCollectorCallback;org.webrtc.RTCStatsCollectorCallback
-Org.Webrtc.ISdpObserver, webrtc;org.webrtc.SdpObserver
+Org.Webrtc.ISdpObserver, skyway_room;org.webrtc.SdpObserver
 Org.Webrtc.ISdpObserver;org.webrtc.SdpObserver
 org.webrtc.SdpObserver;org.webrtc.SdpObserver
-Org.Webrtc.ISSLCertificateVerifier, webrtc;org.webrtc.SSLCertificateVerifier
+Org.Webrtc.ISSLCertificateVerifier, skyway_room;org.webrtc.SSLCertificateVerifier
 Org.Webrtc.ISSLCertificateVerifier;org.webrtc.SSLCertificateVerifier
 org.webrtc.SSLCertificateVerifier;org.webrtc.SSLCertificateVerifier
-Org.Webrtc.IStatsObserver, webrtc;org.webrtc.StatsObserver
+Org.Webrtc.IStatsObserver, skyway_room;org.webrtc.StatsObserver
 Org.Webrtc.IStatsObserver;org.webrtc.StatsObserver
 org.webrtc.StatsObserver;org.webrtc.StatsObserver
-Org.Webrtc.IVideoCapturer, webrtc;org.webrtc.VideoCapturer
+Org.Webrtc.IVideoCapturer, skyway_room;org.webrtc.VideoCapturer
 Org.Webrtc.IVideoCapturer;org.webrtc.VideoCapturer
 org.webrtc.VideoCapturer;org.webrtc.VideoCapturer
-Org.Webrtc.IVideoDecoder, webrtc;org.webrtc.VideoDecoder
+Org.Webrtc.IVideoDecoder, skyway_room;org.webrtc.VideoDecoder
 Org.Webrtc.IVideoDecoder;org.webrtc.VideoDecoder
 org.webrtc.VideoDecoder;org.webrtc.VideoDecoder
-Org.Webrtc.IVideoDecoder+ICallback, webrtc;org.webrtc.VideoDecoder$Callback
+Org.Webrtc.IVideoDecoder+ICallback, skyway_room;org.webrtc.VideoDecoder$Callback
 Org.Webrtc.IVideoDecoder.ICallback;org.webrtc.VideoDecoder$Callback
 org.webrtc.VideoDecoder$Callback;org.webrtc.VideoDecoder$Callback
-Org.Webrtc.IVideoDecoderFactory, webrtc;org.webrtc.VideoDecoderFactory
+Org.Webrtc.IVideoDecoderFactory, skyway_room;org.webrtc.VideoDecoderFactory
 Org.Webrtc.IVideoDecoderFactory;org.webrtc.VideoDecoderFactory
 org.webrtc.VideoDecoderFactory;org.webrtc.VideoDecoderFactory
-Org.Webrtc.IVideoEncoder, webrtc;org.webrtc.VideoEncoder
+Org.Webrtc.IVideoEncoder, skyway_room;org.webrtc.VideoEncoder
 Org.Webrtc.IVideoEncoder;org.webrtc.VideoEncoder
 org.webrtc.VideoEncoder;org.webrtc.VideoEncoder
-Org.Webrtc.IVideoEncoder+ICallback, webrtc;org.webrtc.VideoEncoder$Callback
+Org.Webrtc.IVideoEncoder+ICallback, skyway_room;org.webrtc.VideoEncoder$Callback
 Org.Webrtc.IVideoEncoder.ICallback;org.webrtc.VideoEncoder$Callback
 org.webrtc.VideoEncoder$Callback;org.webrtc.VideoEncoder$Callback
-Org.Webrtc.IVideoEncoderFactory, webrtc;org.webrtc.VideoEncoderFactory
+Org.Webrtc.IVideoEncoderFactory, skyway_room;org.webrtc.VideoEncoderFactory
 Org.Webrtc.IVideoEncoderFactory;org.webrtc.VideoEncoderFactory
 org.webrtc.VideoEncoderFactory;org.webrtc.VideoEncoderFactory
-Org.Webrtc.IVideoEncoderFactory+IVideoEncoderSelector, webrtc;org.webrtc.VideoEncoderFactory$VideoEncoderSelector
+Org.Webrtc.IVideoEncoderFactory+IVideoEncoderSelector, skyway_room;org.webrtc.VideoEncoderFactory$VideoEncoderSelector
 Org.Webrtc.IVideoEncoderFactory.IVideoEncoderSelector;org.webrtc.VideoEncoderFactory$VideoEncoderSelector
 org.webrtc.VideoEncoderFactory$VideoEncoderSelector;org.webrtc.VideoEncoderFactory$VideoEncoderSelector
-Org.Webrtc.IVideoFrameBufferType, webrtc;org.webrtc.VideoFrameBufferType
+Org.Webrtc.IVideoFrameBufferType, skyway_room;org.webrtc.VideoFrameBufferType
 Org.Webrtc.IVideoFrameBufferType;org.webrtc.VideoFrameBufferType
 org.webrtc.VideoFrameBufferType;org.webrtc.VideoFrameBufferType
-Org.Webrtc.IVideoProcessor, webrtc;org.webrtc.VideoProcessor
+Org.Webrtc.IVideoProcessor, skyway_room;org.webrtc.VideoProcessor
 Org.Webrtc.IVideoProcessor;org.webrtc.VideoProcessor
 org.webrtc.VideoProcessor;org.webrtc.VideoProcessor
-Org.Webrtc.IVideoSink, webrtc;org.webrtc.VideoSink
+Org.Webrtc.IVideoSink, skyway_room;org.webrtc.VideoSink
 Org.Webrtc.IVideoSink;org.webrtc.VideoSink
 org.webrtc.VideoSink;org.webrtc.VideoSink
-Org.Webrtc.NetworkMonitor+INetworkObserver, webrtc;org.webrtc.NetworkMonitor$NetworkObserver
+Org.Webrtc.NetworkMonitor+INetworkObserver, skyway_room;org.webrtc.NetworkMonitor$NetworkObserver
 Org.Webrtc.NetworkMonitor.INetworkObserver;org.webrtc.NetworkMonitor$NetworkObserver
 org.webrtc.NetworkMonitor$NetworkObserver;org.webrtc.NetworkMonitor$NetworkObserver
-Org.Webrtc.PeerConnection+IObserver, webrtc;org.webrtc.PeerConnection$Observer
+Org.Webrtc.PeerConnection+IObserver, skyway_room;org.webrtc.PeerConnection$Observer
 Org.Webrtc.PeerConnection.IObserver;org.webrtc.PeerConnection$Observer
 org.webrtc.PeerConnection$Observer;org.webrtc.PeerConnection$Observer
-Org.Webrtc.RendererCommon+IGlDrawer, webrtc;org.webrtc.RendererCommon$GlDrawer
+Org.Webrtc.RendererCommon+IGlDrawer, skyway_room;org.webrtc.RendererCommon$GlDrawer
 Org.Webrtc.RendererCommon.IGlDrawer;org.webrtc.RendererCommon$GlDrawer
 org.webrtc.RendererCommon$GlDrawer;org.webrtc.RendererCommon$GlDrawer
-Org.Webrtc.RendererCommon+IRendererEvents, webrtc;org.webrtc.RendererCommon$RendererEvents
+Org.Webrtc.RendererCommon+IRendererEvents, skyway_room;org.webrtc.RendererCommon$RendererEvents
 Org.Webrtc.RendererCommon.IRendererEvents;org.webrtc.RendererCommon$RendererEvents
 org.webrtc.RendererCommon$RendererEvents;org.webrtc.RendererCommon$RendererEvents
-Org.Webrtc.RtpReceiver+IObserver, webrtc;org.webrtc.RtpReceiver$Observer
+Org.Webrtc.RtpReceiver+IObserver, skyway_room;org.webrtc.RtpReceiver$Observer
 Org.Webrtc.RtpReceiver.IObserver;org.webrtc.RtpReceiver$Observer
 org.webrtc.RtpReceiver$Observer;org.webrtc.RtpReceiver$Observer
-Org.Webrtc.SurfaceTextureHelper+IFrameRefMonitor, webrtc;org.webrtc.SurfaceTextureHelper$FrameRefMonitor
+Org.Webrtc.SurfaceTextureHelper+IFrameRefMonitor, skyway_room;org.webrtc.SurfaceTextureHelper$FrameRefMonitor
 Org.Webrtc.SurfaceTextureHelper.IFrameRefMonitor;org.webrtc.SurfaceTextureHelper$FrameRefMonitor
 org.webrtc.SurfaceTextureHelper$FrameRefMonitor;org.webrtc.SurfaceTextureHelper$FrameRefMonitor
-Org.Webrtc.ThreadUtils+IBlockingOperation, webrtc;org.webrtc.ThreadUtils$BlockingOperation
+Org.Webrtc.ThreadUtils+IBlockingOperation, skyway_room;org.webrtc.ThreadUtils$BlockingOperation
 Org.Webrtc.ThreadUtils.IBlockingOperation;org.webrtc.ThreadUtils$BlockingOperation
 org.webrtc.ThreadUtils$BlockingOperation;org.webrtc.ThreadUtils$BlockingOperation
-Org.Webrtc.VideoFrame+IBuffer, webrtc;org.webrtc.VideoFrame$Buffer
+Org.Webrtc.VideoFrame+IBuffer, skyway_room;org.webrtc.VideoFrame$Buffer
 Org.Webrtc.VideoFrame.IBuffer;org.webrtc.VideoFrame$Buffer
 org.webrtc.VideoFrame$Buffer;org.webrtc.VideoFrame$Buffer
-Org.Webrtc.VideoFrame+II420Buffer, webrtc;org.webrtc.VideoFrame$I420Buffer
+Org.Webrtc.VideoFrame+II420Buffer, skyway_room;org.webrtc.VideoFrame$I420Buffer
 Org.Webrtc.VideoFrame.II420Buffer;org.webrtc.VideoFrame$I420Buffer
 org.webrtc.VideoFrame$I420Buffer;org.webrtc.VideoFrame$I420Buffer
-Org.Webrtc.VideoFrame+ITextureBuffer, webrtc;org.webrtc.VideoFrame$TextureBuffer
+Org.Webrtc.VideoFrame+ITextureBuffer, skyway_room;org.webrtc.VideoFrame$TextureBuffer
 Org.Webrtc.VideoFrame.ITextureBuffer;org.webrtc.VideoFrame$TextureBuffer
 org.webrtc.VideoFrame$TextureBuffer;org.webrtc.VideoFrame$TextureBuffer
-Org.Webrtc.Voiceengine.WebRtcAudioRecord+IWebRtcAudioRecordErrorCallback, webrtc;org.webrtc.voiceengine.WebRtcAudioRecord$WebRtcAudioRecordErrorCallback
+Org.Webrtc.Voiceengine.WebRtcAudioRecord+IWebRtcAudioRecordErrorCallback, skyway_room;org.webrtc.voiceengine.WebRtcAudioRecord$WebRtcAudioRecordErrorCallback
 Org.Webrtc.Voiceengine.WebRtcAudioRecord.IWebRtcAudioRecordErrorCallback;org.webrtc.voiceengine.WebRtcAudioRecord$WebRtcAudioRecordErrorCallback
 org.webrtc.voiceengine.WebRtcAudioRecord$WebRtcAudioRecordErrorCallback;org.webrtc.voiceengine.WebRtcAudioRecord$WebRtcAudioRecordErrorCallback
-Org.Webrtc.Voiceengine.WebRtcAudioRecord+IWebRtcAudioRecordSamplesReadyCallback, webrtc;org.webrtc.voiceengine.WebRtcAudioRecord$WebRtcAudioRecordSamplesReadyCallback
+Org.Webrtc.Voiceengine.WebRtcAudioRecord+IWebRtcAudioRecordSamplesReadyCallback, skyway_room;org.webrtc.voiceengine.WebRtcAudioRecord$WebRtcAudioRecordSamplesReadyCallback
 Org.Webrtc.Voiceengine.WebRtcAudioRecord.IWebRtcAudioRecordSamplesReadyCallback;org.webrtc.voiceengine.WebRtcAudioRecord$WebRtcAudioRecordSamplesReadyCallback
 org.webrtc.voiceengine.WebRtcAudioRecord$WebRtcAudioRecordSamplesReadyCallback;org.webrtc.voiceengine.WebRtcAudioRecord$WebRtcAudioRecordSamplesReadyCallback
-Org.Webrtc.Voiceengine.WebRtcAudioTrack+IErrorCallback, webrtc;org.webrtc.voiceengine.WebRtcAudioTrack$ErrorCallback
+Org.Webrtc.Voiceengine.WebRtcAudioTrack+IErrorCallback, skyway_room;org.webrtc.voiceengine.WebRtcAudioTrack$ErrorCallback
 Org.Webrtc.Voiceengine.WebRtcAudioTrack.IErrorCallback;org.webrtc.voiceengine.WebRtcAudioTrack$ErrorCallback
 org.webrtc.voiceengine.WebRtcAudioTrack$ErrorCallback;org.webrtc.voiceengine.WebRtcAudioTrack$ErrorCallback
-Org.Webrtc.Voiceengine.WebRtcAudioTrack+IWebRtcAudioTrackErrorCallback, webrtc;org.webrtc.voiceengine.WebRtcAudioTrack$WebRtcAudioTrackErrorCallback
+Org.Webrtc.Voiceengine.WebRtcAudioTrack+IWebRtcAudioTrackErrorCallback, skyway_room;org.webrtc.voiceengine.WebRtcAudioTrack$WebRtcAudioTrackErrorCallback
 Org.Webrtc.Voiceengine.WebRtcAudioTrack.IWebRtcAudioTrackErrorCallback;org.webrtc.voiceengine.WebRtcAudioTrack$WebRtcAudioTrackErrorCallback
 org.webrtc.voiceengine.WebRtcAudioTrack$WebRtcAudioTrackErrorCallback;org.webrtc.voiceengine.WebRtcAudioTrack$WebRtcAudioTrackErrorCallback
-Org.Webrtc.Audio.IAudioDeviceModule, webrtc;org.webrtc.audio.AudioDeviceModule
+Org.Webrtc.Audio.IAudioDeviceModule, skyway_room;org.webrtc.audio.AudioDeviceModule
 Org.Webrtc.Audio.IAudioDeviceModule;org.webrtc.audio.AudioDeviceModule
 org.webrtc.audio.AudioDeviceModule;org.webrtc.audio.AudioDeviceModule
-Org.Webrtc.Audio.JavaAudioDeviceModule+IAudioRecordErrorCallback, webrtc;org.webrtc.audio.JavaAudioDeviceModule$AudioRecordErrorCallback
+Org.Webrtc.Audio.JavaAudioDeviceModule+IAudioRecordErrorCallback, skyway_room;org.webrtc.audio.JavaAudioDeviceModule$AudioRecordErrorCallback
 Org.Webrtc.Audio.JavaAudioDeviceModule.IAudioRecordErrorCallback;org.webrtc.audio.JavaAudioDeviceModule$AudioRecordErrorCallback
 org.webrtc.audio.JavaAudioDeviceModule$AudioRecordErrorCallback;org.webrtc.audio.JavaAudioDeviceModule$AudioRecordErrorCallback
-Org.Webrtc.Audio.JavaAudioDeviceModule+IAudioRecordStateCallback, webrtc;org.webrtc.audio.JavaAudioDeviceModule$AudioRecordStateCallback
+Org.Webrtc.Audio.JavaAudioDeviceModule+IAudioRecordStateCallback, skyway_room;org.webrtc.audio.JavaAudioDeviceModule$AudioRecordStateCallback
 Org.Webrtc.Audio.JavaAudioDeviceModule.IAudioRecordStateCallback;org.webrtc.audio.JavaAudioDeviceModule$AudioRecordStateCallback
 org.webrtc.audio.JavaAudioDeviceModule$AudioRecordStateCallback;org.webrtc.audio.JavaAudioDeviceModule$AudioRecordStateCallback
-Org.Webrtc.Audio.JavaAudioDeviceModule+IAudioTrackErrorCallback, webrtc;org.webrtc.audio.JavaAudioDeviceModule$AudioTrackErrorCallback
+Org.Webrtc.Audio.JavaAudioDeviceModule+IAudioTrackErrorCallback, skyway_room;org.webrtc.audio.JavaAudioDeviceModule$AudioTrackErrorCallback
 Org.Webrtc.Audio.JavaAudioDeviceModule.IAudioTrackErrorCallback;org.webrtc.audio.JavaAudioDeviceModule$AudioTrackErrorCallback
 org.webrtc.audio.JavaAudioDeviceModule$AudioTrackErrorCallback;org.webrtc.audio.JavaAudioDeviceModule$AudioTrackErrorCallback
-Org.Webrtc.Audio.JavaAudioDeviceModule+IAudioTrackStateCallback, webrtc;org.webrtc.audio.JavaAudioDeviceModule$AudioTrackStateCallback
+Org.Webrtc.Audio.JavaAudioDeviceModule+IAudioTrackStateCallback, skyway_room;org.webrtc.audio.JavaAudioDeviceModule$AudioTrackStateCallback
 Org.Webrtc.Audio.JavaAudioDeviceModule.IAudioTrackStateCallback;org.webrtc.audio.JavaAudioDeviceModule$AudioTrackStateCallback
 org.webrtc.audio.JavaAudioDeviceModule$AudioTrackStateCallback;org.webrtc.audio.JavaAudioDeviceModule$AudioTrackStateCallback
-Org.Webrtc.Audio.JavaAudioDeviceModule+ISamplesReadyCallback, webrtc;org.webrtc.audio.JavaAudioDeviceModule$SamplesReadyCallback
+Org.Webrtc.Audio.JavaAudioDeviceModule+ISamplesReadyCallback, skyway_room;org.webrtc.audio.JavaAudioDeviceModule$SamplesReadyCallback
 Org.Webrtc.Audio.JavaAudioDeviceModule.ISamplesReadyCallback;org.webrtc.audio.JavaAudioDeviceModule$SamplesReadyCallback
 org.webrtc.audio.JavaAudioDeviceModule$SamplesReadyCallback;org.webrtc.audio.JavaAudioDeviceModule$SamplesReadyCallback
-Org.Webrtc.Audio.WebRtcAudioRecord+IOnAudioBufferListener, webrtc;org.webrtc.audio.WebRtcAudioRecord$OnAudioBufferListener
+Org.Webrtc.Audio.WebRtcAudioRecord+IOnAudioBufferListener, skyway_room;org.webrtc.audio.WebRtcAudioRecord$OnAudioBufferListener
 Org.Webrtc.Audio.WebRtcAudioRecord.IOnAudioBufferListener;org.webrtc.audio.WebRtcAudioRecord$OnAudioBufferListener
 org.webrtc.audio.WebRtcAudioRecord$OnAudioBufferListener;org.webrtc.audio.WebRtcAudioRecord$OnAudioBufferListener
-Org.Webrtc.Audio.WebRtcAudioRecord+IOnAudioBufferListenerImplementor, webrtc;mono.org.webrtc.audio.WebRtcAudioRecord_OnAudioBufferListenerImplementor
+Org.Webrtc.Audio.WebRtcAudioRecord+IOnAudioBufferListenerImplementor, skyway_room;mono.org.webrtc.audio.WebRtcAudioRecord_OnAudioBufferListenerImplementor
 Org.Webrtc.Audio.WebRtcAudioRecord.IOnAudioBufferListenerImplementor;mono.org.webrtc.audio.WebRtcAudioRecord_OnAudioBufferListenerImplementor
 mono.org.webrtc.audio.WebRtcAudioRecord_OnAudioBufferListenerImplementor;mono.org.webrtc.audio.WebRtcAudioRecord_OnAudioBufferListenerImplementor
-Org.Webrtc.Audio.WebRtcAudioTrack+IOnAudioBufferListener, webrtc;org.webrtc.audio.WebRtcAudioTrack$OnAudioBufferListener
+Org.Webrtc.Audio.WebRtcAudioTrack+IOnAudioBufferListener, skyway_room;org.webrtc.audio.WebRtcAudioTrack$OnAudioBufferListener
 Org.Webrtc.Audio.WebRtcAudioTrack.IOnAudioBufferListener;org.webrtc.audio.WebRtcAudioTrack$OnAudioBufferListener
 org.webrtc.audio.WebRtcAudioTrack$OnAudioBufferListener;org.webrtc.audio.WebRtcAudioTrack$OnAudioBufferListener
-Org.Webrtc.Audio.WebRtcAudioTrack+IOnAudioBufferListenerImplementor, webrtc;mono.org.webrtc.audio.WebRtcAudioTrack_OnAudioBufferListenerImplementor
+Org.Webrtc.Audio.WebRtcAudioTrack+IOnAudioBufferListenerImplementor, skyway_room;mono.org.webrtc.audio.WebRtcAudioTrack_OnAudioBufferListenerImplementor
 Org.Webrtc.Audio.WebRtcAudioTrack.IOnAudioBufferListenerImplementor;mono.org.webrtc.audio.WebRtcAudioTrack_OnAudioBufferListenerImplementor
 mono.org.webrtc.audio.WebRtcAudioTrack_OnAudioBufferListenerImplementor;mono.org.webrtc.audio.WebRtcAudioTrack_OnAudioBufferListenerImplementor
+Com.Ntt.Skyway.Plugin.IPlugin, skyway_room;com.ntt.skyway.plugin.Plugin
+Com.Ntt.Skyway.Plugin.IPlugin;com.ntt.skyway.plugin.Plugin
+com.ntt.skyway.plugin.Plugin;com.ntt.skyway.plugin.Plugin
+Com.Ntt.Skyway.Core.ISkyWayOptIn, skyway_room;com.ntt.skyway.core.SkyWayOptIn
+Com.Ntt.Skyway.Core.ISkyWayOptIn;com.ntt.skyway.core.SkyWayOptIn
+com.ntt.skyway.core.SkyWayOptIn;com.ntt.skyway.core.SkyWayOptIn
+Com.Ntt.Skyway.Core.Content.Sink.IRenderer, skyway_room;com.ntt.skyway.core.content.sink.Renderer
+Com.Ntt.Skyway.Core.Content.Sink.IRenderer;com.ntt.skyway.core.content.sink.Renderer
+com.ntt.skyway.core.content.sink.Renderer;com.ntt.skyway.core.content.sink.Renderer
+Com.Ntt.Skyway.Core.Channel.IChannel, skyway_room;com.ntt.skyway.core.channel.Channel
+Com.Ntt.Skyway.Core.Channel.IChannel;com.ntt.skyway.core.channel.Channel
+com.ntt.skyway.core.channel.Channel;com.ntt.skyway.core.channel.Channel
+Com.Ntt.Skyway.Core.Channel.IPublication, skyway_room;com.ntt.skyway.core.channel.Publication
+Com.Ntt.Skyway.Core.Channel.IPublication;com.ntt.skyway.core.channel.Publication
+com.ntt.skyway.core.channel.Publication;com.ntt.skyway.core.channel.Publication
+Com.Ntt.Skyway.Core.Channel.ISubscription, skyway_room;com.ntt.skyway.core.channel.Subscription
+Com.Ntt.Skyway.Core.Channel.ISubscription;com.ntt.skyway.core.channel.Subscription
+com.ntt.skyway.core.channel.Subscription;com.ntt.skyway.core.channel.Subscription
+Com.Ntt.Skyway.Core.Channel.Member.IMember, skyway_room;com.ntt.skyway.core.channel.member.Member
+Com.Ntt.Skyway.Core.Channel.Member.IMember;com.ntt.skyway.core.channel.member.Member
+com.ntt.skyway.core.channel.member.Member;com.ntt.skyway.core.channel.member.Member

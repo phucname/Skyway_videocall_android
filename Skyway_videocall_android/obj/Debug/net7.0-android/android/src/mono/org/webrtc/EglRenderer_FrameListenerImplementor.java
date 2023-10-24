@@ -11,9 +11,9 @@ public class EglRenderer_FrameListenerImplementor
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_onFrame:(Landroid/graphics/Bitmap;)V:GetOnFrame_Landroid_graphics_Bitmap_Handler:Org.Webrtc.EglRenderer/IFrameListenerInvoker, webrtc\n" +
+			"n_onFrame:(Landroid/graphics/Bitmap;)V:GetOnFrame_Landroid_graphics_Bitmap_Handler:Org.Webrtc.EglRenderer/IFrameListenerInvoker, skyway_room\n" +
 			"";
-		mono.android.Runtime.register ("Org.Webrtc.EglRenderer+IFrameListenerImplementor, webrtc", EglRenderer_FrameListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Org.Webrtc.EglRenderer+IFrameListenerImplementor, skyway_room", EglRenderer_FrameListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class EglRenderer_FrameListenerImplementor
 	{
 		super ();
 		if (getClass () == EglRenderer_FrameListenerImplementor.class) {
-			mono.android.TypeManager.Activate ("Org.Webrtc.EglRenderer+IFrameListenerImplementor, webrtc", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Org.Webrtc.EglRenderer+IFrameListenerImplementor, skyway_room", "", this, new java.lang.Object[] {  });
 		}
 	}
 

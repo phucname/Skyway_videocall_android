@@ -3,8 +3,11 @@
   <PropertyGroup>
     <SelectedDevice>Pixel_4_XL_API_33</SelectedDevice>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
-    <ActiveDebugProfile>Pixel 4 XL API 33 (Android 13.0 - API 33)</ActiveDebugProfile>
-    <DefaultDevice>Pixel_4_XL_API_33</DefaultDevice>
+    <ActiveDebugProfile>Pixel_6_API_31</ActiveDebugProfile>
+    <DefaultDevice>Pixel_6_API_31</DefaultDevice>
     <AndroidDesignerPreferredDevice>7.3in Foldable</AndroidDesignerPreferredDevice>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>

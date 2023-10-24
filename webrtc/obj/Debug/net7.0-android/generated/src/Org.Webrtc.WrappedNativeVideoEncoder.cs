@@ -191,11 +191,7 @@ namespace Org.Webrtc {
 			}
 		}
 
-        public IVideoEncoder.ScalingSettings? GetScalingSettings()
-        {
-            throw new NotImplementedException();
-        }
-    }
+	}
 
 	[global::Android.Runtime.Register ("org/webrtc/WrappedNativeVideoEncoder", DoNotGenerateAcw=true)]
 	internal partial class WrappedNativeVideoEncoderInvoker : WrappedNativeVideoEncoder {

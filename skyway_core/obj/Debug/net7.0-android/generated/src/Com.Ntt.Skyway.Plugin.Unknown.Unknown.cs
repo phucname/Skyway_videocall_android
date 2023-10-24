@@ -62,9 +62,5 @@ namespace Com.Ntt.Skyway.Plugin.Unknown {
 			}
 		}
 
-        public override Type GetType()
-        {
-            throw new NotImplementedException();
-        }
-    }
+	}
 }

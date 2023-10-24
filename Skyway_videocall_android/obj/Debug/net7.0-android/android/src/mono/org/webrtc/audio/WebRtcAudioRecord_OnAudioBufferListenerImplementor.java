@@ -11,9 +11,9 @@ public class WebRtcAudioRecord_OnAudioBufferListenerImplementor
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_onAudioBuffer:(Ljava/nio/ByteBuffer;)V:GetOnAudioBuffer_Ljava_nio_ByteBuffer_Handler:Org.Webrtc.Audio.WebRtcAudioRecord/IOnAudioBufferListenerInvoker, webrtc\n" +
+			"n_onAudioBuffer:(Ljava/nio/ByteBuffer;)V:GetOnAudioBuffer_Ljava_nio_ByteBuffer_Handler:Org.Webrtc.Audio.WebRtcAudioRecord/IOnAudioBufferListenerInvoker, skyway_room\n" +
 			"";
-		mono.android.Runtime.register ("Org.Webrtc.Audio.WebRtcAudioRecord+IOnAudioBufferListenerImplementor, webrtc", WebRtcAudioRecord_OnAudioBufferListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Org.Webrtc.Audio.WebRtcAudioRecord+IOnAudioBufferListenerImplementor, skyway_room", WebRtcAudioRecord_OnAudioBufferListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class WebRtcAudioRecord_OnAudioBufferListenerImplementor
 	{
 		super ();
 		if (getClass () == WebRtcAudioRecord_OnAudioBufferListenerImplementor.class) {
-			mono.android.TypeManager.Activate ("Org.Webrtc.Audio.WebRtcAudioRecord+IOnAudioBufferListenerImplementor, webrtc", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Org.Webrtc.Audio.WebRtcAudioRecord+IOnAudioBufferListenerImplementor, skyway_room", "", this, new java.lang.Object[] {  });
 		}
 	}
 

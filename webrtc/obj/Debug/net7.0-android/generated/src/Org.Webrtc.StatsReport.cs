@@ -120,33 +120,28 @@ namespace Org.Webrtc {
 			}
 
 
-            // Metadata.xml XPath field reference: path="/api/package[@name='org.webrtc']/class[@name='StatsReport.Value']/field[@name='value']"
-            public string? GetValue()
-            {
-                const string __id = "value.Ljava/lang/String;";
+			// Metadata.xml XPath field reference: path="/api/package[@name='org.webrtc']/class[@name='StatsReport.Value']/field[@name='value']"
+			[Register ("value")]
+			public string? Value {
+				get {
+					const string __id = "value.Ljava/lang/String;";
 
-                var __v = _members.InstanceFields.GetObjectValue(__id, this);
-                return JNIEnv.GetString(__v.Handle, JniHandleOwnership.TransferLocalRef);
-            }
+					var __v = _members.InstanceFields.GetObjectValue (__id, this);
+					return JNIEnv.GetString (__v.Handle, JniHandleOwnership.TransferLocalRef);
+				}
+				set {
+					const string __id = "value.Ljava/lang/String;";
 
+					IntPtr native_value = JNIEnv.NewString ((string?)value);
+					try {
+						_members.InstanceFields.SetValue (__id, this, new JniObjectReference (native_value));
+					} finally {
+						JNIEnv.DeleteLocalRef (native_value);
+					}
+				}
+			}
 
-            // Metadata.xml XPath field reference: path="/api/package[@name='org.webrtc']/class[@name='StatsReport.Value']/field[@name='value']"
-            public void SetValue(string? value)
-            {
-                const string __id = "value.Ljava/lang/String;";
-
-                IntPtr native_value = JNIEnv.NewString((string?)value);
-                try
-                {
-                    _members.InstanceFields.SetValue(__id, this, new JniObjectReference(native_value));
-                }
-                finally
-                {
-                    JNIEnv.DeleteLocalRef(native_value);
-                }
-            }
-
-            static readonly JniPeerMembers _members = new XAPeerMembers ("org/webrtc/StatsReport$Value", typeof (Value));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("org/webrtc/StatsReport$Value", typeof (Value));
 
 			internal static IntPtr class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
