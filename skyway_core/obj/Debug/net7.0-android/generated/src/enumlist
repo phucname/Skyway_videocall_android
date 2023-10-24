@@ -9,6 +9,5 @@ com.ntt.skyway.core.content.sink.SurfaceViewRenderer$LayoutParam:Com.Ntt.Skyway.
 com.ntt.skyway.core.content.sink.SurfaceViewRenderer$ScalingType:Com.Ntt.Skyway.Core.Content.Sink:SurfaceViewRenderer.ScalingType
 com.ntt.skyway.core.content.Stream$ContentType:Com.Ntt.Skyway.Core.Content:Stream.ContentType
 com.ntt.skyway.core.content.Stream$Side:Com.Ntt.Skyway.Core.Content:Stream.Side
-com.ntt.skyway.core.network.WebSocketClient$ConnectionState:Com.Ntt.Skyway.Core.Network:WebSocketClient.ConnectionState
 com.ntt.skyway.core.SkyWayContext$TurnPolicy:Com.Ntt.Skyway.Core:SkyWayContext.TurnPolicy
 com.ntt.skyway.core.util.Logger$LogLevel:Com.Ntt.Skyway.Core.Util:Logger.LogLevel

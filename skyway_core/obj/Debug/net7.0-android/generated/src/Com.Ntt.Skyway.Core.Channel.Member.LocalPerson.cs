@@ -7,10 +7,20 @@ namespace Com.Ntt.Skyway.Core.Channel.Member {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']"
 	[global::Android.Runtime.Register ("com/ntt/skyway/core/channel/member/LocalPerson", DoNotGenerateAcw=true)]
-	public abstract partial class LocalPerson : global::Java.Lang.Object, global::Com.Ntt.Skyway.Core.Channel.Member.IMember {
+	public sealed partial class LocalPerson : global::Com.Ntt.Skyway.Core.Channel.Member.Member {
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/field[@name='PUBLISH_TIMEOUT_SEC']"
+		[Register ("PUBLISH_TIMEOUT_SEC")]
+		[global::System.Obsolete (@"deprecated")]
+		public const long PublishTimeoutSec = (long) 10000;
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/field[@name='SUBSCRIBE_TIMEOUT_SEC']"
+		[Register ("SUBSCRIBE_TIMEOUT_SEC")]
+		[global::System.Obsolete (@"deprecated")]
+		public const long SubscribeTimeoutSec = (long) 10000;
+
 		static readonly JniPeerMembers _members = new XAPeerMembers ("com/ntt/skyway/core/channel/member/LocalPerson", typeof (LocalPerson));
 
-		internal static IntPtr class_ref {
+		internal static new IntPtr class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
 		}
 
@@ -32,329 +42,116 @@ namespace Com.Ntt.Skyway.Core.Channel.Member {
 			get { return _members.ManagedPeerType; }
 		}
 
-		protected LocalPerson (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer)
+		internal LocalPerson (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer)
 		{
 		}
 
-		// Metadata.xml XPath constructor reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/constructor[@name='LocalPerson' and count(parameter)=0]"
-		[Register (".ctor", "()V", "")]
-		public unsafe LocalPerson () : base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
-		{
-			const string __id = "()V";
-
-			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
-				return;
-
-			try {
-				var __r = _members.InstanceMethods.StartCreateInstance (__id, ((object) this).GetType (), null);
-				SetHandle (__r.Handle, JniHandleOwnership.TransferLocalRef);
-				_members.InstanceMethods.FinishCreateInstance (__id, this, null);
-			} finally {
-			}
-		}
-
-		static Delegate? cb_getSide;
-#pragma warning disable 0169
-		static Delegate GetGetSideHandler ()
-		{
-			if (cb_getSide == null)
-				cb_getSide = JNINativeWrapper.CreateDelegate ((_JniMarshal_PP_L) n_GetSide);
-			return cb_getSide;
-		}
-
-		static IntPtr n_GetSide (IntPtr jnienv, IntPtr native__this)
-		{
-			var __this = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.LocalPerson> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
-			return JNIEnv.ToLocalJniHandle (__this.Side);
-		}
-#pragma warning restore 0169
-
-		public virtual unsafe global::Com.Ntt.Skyway.Core.Channel.Member.IMember.Side Side {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getSide' and count(parameter)=0]"
-			[Register ("getSide", "()Lcom/ntt/skyway/core/channel/member/Member$Side;", "GetGetSideHandler")]
+		public unsafe global::Kotlin.Jvm.Functions.IFunction1? OnPublicationSubscribedHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getOnPublicationSubscribedHandler' and count(parameter)=0]"
+			[Register ("getOnPublicationSubscribedHandler", "()Lkotlin/jvm/functions/Function1;", "")]
 			get {
-				const string __id = "getSide.()Lcom/ntt/skyway/core/channel/member/Member$Side;";
+				const string __id = "getOnPublicationSubscribedHandler.()Lkotlin/jvm/functions/Function1;";
 				try {
-					var __rm = _members.InstanceMethods.InvokeVirtualObjectMethod (__id, this, null);
-					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.IMember.Side> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction1> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
 				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='setOnPublicationSubscribedHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function1&lt;? super com.ntt.skyway.core.channel.Subscription, kotlin.Unit&gt;']]"
+			[Register ("setOnPublicationSubscribedHandler", "(Lkotlin/jvm/functions/Function1;)V", "")]
+			set {
+				const string __id = "setOnPublicationSubscribedHandler.(Lkotlin/jvm/functions/Function1;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
 				}
 			}
 		}
 
-		static Delegate? cb_getSubType;
-#pragma warning disable 0169
-		static Delegate GetGetSubTypeHandler ()
-		{
-			if (cb_getSubType == null)
-				cb_getSubType = JNINativeWrapper.CreateDelegate ((_JniMarshal_PP_L) n_GetSubType);
-			return cb_getSubType;
+		public unsafe global::Kotlin.Jvm.Functions.IFunction1? OnPublicationUnsubscribedHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getOnPublicationUnsubscribedHandler' and count(parameter)=0]"
+			[Register ("getOnPublicationUnsubscribedHandler", "()Lkotlin/jvm/functions/Function1;", "")]
+			get {
+				const string __id = "getOnPublicationUnsubscribedHandler.()Lkotlin/jvm/functions/Function1;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction1> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='setOnPublicationUnsubscribedHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function1&lt;? super com.ntt.skyway.core.channel.Subscription, kotlin.Unit&gt;']]"
+			[Register ("setOnPublicationUnsubscribedHandler", "(Lkotlin/jvm/functions/Function1;)V", "")]
+			set {
+				const string __id = "setOnPublicationUnsubscribedHandler.(Lkotlin/jvm/functions/Function1;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
 		}
 
-		static IntPtr n_GetSubType (IntPtr jnienv, IntPtr native__this)
-		{
-			var __this = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.LocalPerson> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
-			return JNIEnv.NewString (__this.SubType);
+		public unsafe global::Kotlin.Jvm.Functions.IFunction1? OnStreamPublishedHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getOnStreamPublishedHandler' and count(parameter)=0]"
+			[Register ("getOnStreamPublishedHandler", "()Lkotlin/jvm/functions/Function1;", "")]
+			get {
+				const string __id = "getOnStreamPublishedHandler.()Lkotlin/jvm/functions/Function1;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction1> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='setOnStreamPublishedHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function1&lt;? super com.ntt.skyway.core.channel.Publication, kotlin.Unit&gt;']]"
+			[Register ("setOnStreamPublishedHandler", "(Lkotlin/jvm/functions/Function1;)V", "")]
+			set {
+				const string __id = "setOnStreamPublishedHandler.(Lkotlin/jvm/functions/Function1;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
 		}
-#pragma warning restore 0169
 
-		public virtual unsafe string SubType {
+		public unsafe global::Kotlin.Jvm.Functions.IFunction1? OnStreamUnpublishedHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getOnStreamUnpublishedHandler' and count(parameter)=0]"
+			[Register ("getOnStreamUnpublishedHandler", "()Lkotlin/jvm/functions/Function1;", "")]
+			get {
+				const string __id = "getOnStreamUnpublishedHandler.()Lkotlin/jvm/functions/Function1;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction1> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='setOnStreamUnpublishedHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function1&lt;? super com.ntt.skyway.core.channel.Publication, kotlin.Unit&gt;']]"
+			[Register ("setOnStreamUnpublishedHandler", "(Lkotlin/jvm/functions/Function1;)V", "")]
+			set {
+				const string __id = "setOnStreamUnpublishedHandler.(Lkotlin/jvm/functions/Function1;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
+		public override unsafe string SubType {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getSubType' and count(parameter)=0]"
-			[Register ("getSubType", "()Ljava/lang/String;", "GetGetSubTypeHandler")]
+			[Register ("getSubType", "()Ljava/lang/String;", "")]
 			get {
 				const string __id = "getSubType.()Ljava/lang/String;";
 				try {
-					var __rm = _members.InstanceMethods.InvokeVirtualObjectMethod (__id, this, null);
-					return JNIEnv.GetString (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
-				} finally {
-				}
-			}
-		}
-
-		static Delegate? cb_getType;
-#pragma warning disable 0169
-		static Delegate GetGetTypeHandler ()
-		{
-			if (cb_getType == null)
-				cb_getType = JNINativeWrapper.CreateDelegate ((_JniMarshal_PP_L) n_GetType);
-			return cb_getType;
-		}
-
-		static IntPtr n_GetType (IntPtr jnienv, IntPtr native__this)
-		{
-			var __this = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.LocalPerson> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
-			return JNIEnv.ToLocalJniHandle (__this.Type);
-		}
-#pragma warning restore 0169
-
-		public virtual unsafe global::Com.Ntt.Skyway.Core.Channel.Member.IMember.Type Type {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getType' and count(parameter)=0]"
-			[Register ("getType", "()Lcom/ntt/skyway/core/channel/member/Member$Type;", "GetGetTypeHandler")]
-			get {
-				const string __id = "getType.()Lcom/ntt/skyway/core/channel/member/Member$Type;";
-				try {
-					var __rm = _members.InstanceMethods.InvokeVirtualObjectMethod (__id, this, null);
-					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.IMember.Type> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
-				} finally {
-				}
-			}
-		}
-
-		static Delegate? cb_getState;
-#pragma warning disable 0169
-		static Delegate GetGetStateHandler ()
-		{
-			if (cb_getState == null)
-				cb_getState = JNINativeWrapper.CreateDelegate ((_JniMarshal_PP_L) n_GetState);
-			return cb_getState;
-		}
-
-		static IntPtr n_GetState (IntPtr jnienv, IntPtr native__this)
-		{
-			var __this = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.LocalPerson> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
-			return JNIEnv.ToLocalJniHandle (__this.GetState ());
-		}
-#pragma warning restore 0169
-
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/interface[@name='Member']/method[@name='getState' and count(parameter)=0]"
-		[Register ("getState", "()Lcom/ntt/skyway/core/channel/member/Member$State;", "GetGetStateHandler")]
-		public abstract global::Com.Ntt.Skyway.Core.Channel.Member.IMember.State GetState ();
-
-		static Delegate? cb_getChannel;
-#pragma warning disable 0169
-		static Delegate GetGetChannelHandler ()
-		{
-			if (cb_getChannel == null)
-				cb_getChannel = JNINativeWrapper.CreateDelegate ((_JniMarshal_PP_L) n_GetChannel);
-			return cb_getChannel;
-		}
-
-		static IntPtr n_GetChannel (IntPtr jnienv, IntPtr native__this)
-		{
-			var __this = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.LocalPerson> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
-			return JNIEnv.ToLocalJniHandle (__this.Channel);
-		}
-#pragma warning restore 0169
-
-		public abstract global::Com.Ntt.Skyway.Core.Channel.IChannel Channel {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getChannel' and count(parameter)=0]"
-			[Register ("getChannel", "()Lcom/ntt/skyway/core/channel/Channel;", "GetGetChannelHandler")]
-			get; 
-		}
-
-		static Delegate? cb_getId;
-#pragma warning disable 0169
-		static Delegate GetGetIdHandler ()
-		{
-			if (cb_getId == null)
-				cb_getId = JNINativeWrapper.CreateDelegate ((_JniMarshal_PP_L) n_GetId);
-			return cb_getId;
-		}
-
-		static IntPtr n_GetId (IntPtr jnienv, IntPtr native__this)
-		{
-			var __this = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.LocalPerson> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
-			return JNIEnv.NewString (__this.Id);
-		}
-#pragma warning restore 0169
-
-		public abstract string Id {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getId' and count(parameter)=0]"
-			[Register ("getId", "()Ljava/lang/String;", "GetGetIdHandler")]
-			get; 
-		}
-
-		static Delegate? cb_getMetadata;
-#pragma warning disable 0169
-		static Delegate GetGetMetadataHandler ()
-		{
-			if (cb_getMetadata == null)
-				cb_getMetadata = JNINativeWrapper.CreateDelegate ((_JniMarshal_PP_L) n_GetMetadata);
-			return cb_getMetadata;
-		}
-
-		static IntPtr n_GetMetadata (IntPtr jnienv, IntPtr native__this)
-		{
-			var __this = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.LocalPerson> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
-			return JNIEnv.NewString (__this.Metadata);
-		}
-#pragma warning restore 0169
-
-		public abstract string Metadata {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getMetadata' and count(parameter)=0]"
-			[Register ("getMetadata", "()Ljava/lang/String;", "GetGetMetadataHandler")]
-			get; 
-		}
-
-		static Delegate? cb_getName;
-#pragma warning disable 0169
-		static Delegate GetGetNameHandler ()
-		{
-			if (cb_getName == null)
-				cb_getName = JNINativeWrapper.CreateDelegate ((_JniMarshal_PP_L) n_GetName);
-			return cb_getName;
-		}
-
-		static IntPtr n_GetName (IntPtr jnienv, IntPtr native__this)
-		{
-			var __this = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.LocalPerson> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
-			return JNIEnv.NewString (__this.Name);
-		}
-#pragma warning restore 0169
-
-		public abstract string Name {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getName' and count(parameter)=0]"
-			[Register ("getName", "()Ljava/lang/String;", "GetGetNameHandler")]
-			get; 
-		}
-
-		static Delegate? cb_getNativePointer;
-#pragma warning disable 0169
-		static Delegate GetGetNativePointerHandler ()
-		{
-			if (cb_getNativePointer == null)
-				cb_getNativePointer = JNINativeWrapper.CreateDelegate ((_JniMarshal_PP_J) n_GetNativePointer);
-			return cb_getNativePointer;
-		}
-
-		static long n_GetNativePointer (IntPtr jnienv, IntPtr native__this)
-		{
-			var __this = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.LocalPerson> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
-			return __this.NativePointer;
-		}
-#pragma warning restore 0169
-
-		public abstract long NativePointer {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getNativePointer' and count(parameter)=0]"
-			[Register ("getNativePointer", "()J", "GetGetNativePointerHandler")]
-			get; 
-		}
-
-		static Delegate? cb_getPublications;
-#pragma warning disable 0169
-		static Delegate GetGetPublicationsHandler ()
-		{
-			if (cb_getPublications == null)
-				cb_getPublications = JNINativeWrapper.CreateDelegate ((_JniMarshal_PP_L) n_GetPublications);
-			return cb_getPublications;
-		}
-
-		static IntPtr n_GetPublications (IntPtr jnienv, IntPtr native__this)
-		{
-			var __this = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.LocalPerson> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
-			return global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Channel.IPublication>.ToLocalJniHandle (__this.Publications);
-		}
-#pragma warning restore 0169
-
-		public abstract global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Channel.IPublication> Publications {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getPublications' and count(parameter)=0]"
-			[Register ("getPublications", "()Ljava/util/List;", "GetGetPublicationsHandler")]
-			get; 
-		}
-
-		static Delegate? cb_getSubscriptions;
-#pragma warning disable 0169
-		static Delegate GetGetSubscriptionsHandler ()
-		{
-			if (cb_getSubscriptions == null)
-				cb_getSubscriptions = JNINativeWrapper.CreateDelegate ((_JniMarshal_PP_L) n_GetSubscriptions);
-			return cb_getSubscriptions;
-		}
-
-		static IntPtr n_GetSubscriptions (IntPtr jnienv, IntPtr native__this)
-		{
-			var __this = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.LocalPerson> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
-			return global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Channel.ISubscription>.ToLocalJniHandle (__this.Subscriptions);
-		}
-#pragma warning restore 0169
-
-		public abstract global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Channel.ISubscription> Subscriptions {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getSubscriptions' and count(parameter)=0]"
-			[Register ("getSubscriptions", "()Ljava/util/List;", "GetGetSubscriptionsHandler")]
-			get; 
-		}
-
-	}
-
-	[global::Android.Runtime.Register ("com/ntt/skyway/core/channel/member/LocalPerson", DoNotGenerateAcw=true)]
-	internal partial class LocalPersonInvoker : LocalPerson {
-		public LocalPersonInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer)
-		{
-		}
-
-		static readonly JniPeerMembers _members = new XAPeerMembers ("com/ntt/skyway/core/channel/member/LocalPerson", typeof (LocalPersonInvoker));
-
-		[global::System.Diagnostics.DebuggerBrowsable (global::System.Diagnostics.DebuggerBrowsableState.Never)]
-		[global::System.ComponentModel.EditorBrowsable (global::System.ComponentModel.EditorBrowsableState.Never)]
-		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
-			get { return _members; }
-		}
-
-		[global::System.Diagnostics.DebuggerBrowsable (global::System.Diagnostics.DebuggerBrowsableState.Never)]
-		[global::System.ComponentModel.EditorBrowsable (global::System.ComponentModel.EditorBrowsableState.Never)]
-		protected override global::System.Type ThresholdType {
-			get { return _members.ManagedPeerType; }
-		}
-
-		public override unsafe global::Com.Ntt.Skyway.Core.Channel.IChannel Channel {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getChannel' and count(parameter)=0]"
-			[Register ("getChannel", "()Lcom/ntt/skyway/core/channel/Channel;", "GetGetChannelHandler")]
-			get {
-				const string __id = "getChannel.()Lcom/ntt/skyway/core/channel/Channel;";
-				try {
-					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
-					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.IChannel> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
-				} finally {
-				}
-			}
-		}
-
-		public override unsafe string Id {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getId' and count(parameter)=0]"
-			[Register ("getId", "()Ljava/lang/String;", "GetGetIdHandler")]
-			get {
-				const string __id = "getId.()Ljava/lang/String;";
-				try {
 					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
 					return JNIEnv.GetString (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
 				} finally {
@@ -362,80 +159,155 @@ namespace Com.Ntt.Skyway.Core.Channel.Member {
 			}
 		}
 
-		public override unsafe string Metadata {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getMetadata' and count(parameter)=0]"
-			[Register ("getMetadata", "()Ljava/lang/String;", "GetGetMetadataHandler")]
-			get {
-				const string __id = "getMetadata.()Ljava/lang/String;";
-				try {
-					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
-					return JNIEnv.GetString (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
-				} finally {
-				}
-			}
-		}
-
-		public override unsafe string Name {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getName' and count(parameter)=0]"
-			[Register ("getName", "()Ljava/lang/String;", "GetGetNameHandler")]
-			get {
-				const string __id = "getName.()Ljava/lang/String;";
-				try {
-					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
-					return JNIEnv.GetString (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
-				} finally {
-				}
-			}
-		}
-
-		public override unsafe long NativePointer {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getNativePointer' and count(parameter)=0]"
-			[Register ("getNativePointer", "()J", "GetGetNativePointerHandler")]
-			get {
-				const string __id = "getNativePointer.()J";
-				try {
-					var __rm = _members.InstanceMethods.InvokeAbstractInt64Method (__id, this, null);
-					return __rm;
-				} finally {
-				}
-			}
-		}
-
-		public override unsafe global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Channel.IPublication> Publications {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getPublications' and count(parameter)=0]"
-			[Register ("getPublications", "()Ljava/util/List;", "GetGetPublicationsHandler")]
-			get {
-				const string __id = "getPublications.()Ljava/util/List;";
-				try {
-					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
-					return global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Channel.IPublication>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
-				} finally {
-				}
-			}
-		}
-
-		public override unsafe global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Core.Channel.ISubscription> Subscriptions {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getSubscriptions' and count(parameter)=0]"
-			[Register ("getSubscriptions", "()Ljava/util/List;", "GetGetSubscriptionsHandler")]
-			get {
-				const string __id = "getSubscriptions.()Ljava/util/List;";
-				try {
-					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
-					return global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Core.Channel.ISubscription>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
-				} finally {
-				}
-			}
-		}
-
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/interface[@name='Member']/method[@name='getState' and count(parameter)=0]"
-		[Register ("getState", "()Lcom/ntt/skyway/core/channel/member/Member$State;", "GetGetStateHandler")]
-		public override unsafe global::Com.Ntt.Skyway.Core.Channel.Member.IMember.State GetState ()
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getSide' and count(parameter)=0]"
+		[Register ("getSide", "()Lcom/ntt/skyway/core/channel/member/Member$Side;", "")]
+		public override unsafe global::Com.Ntt.Skyway.Core.Channel.Member.Member.Side GetSide ()
 		{
-			const string __id = "getState.()Lcom/ntt/skyway/core/channel/member/Member$State;";
+			const string __id = "getSide.()Lcom/ntt/skyway/core/channel/member/Member$Side;";
 			try {
 				var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
-				return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.IMember.State> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+				return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.Member.Side> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
 			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='getType' and count(parameter)=0]"
+		[Register ("getType", "()Lcom/ntt/skyway/core/channel/member/Member$Type;", "")]
+		public override unsafe global::Com.Ntt.Skyway.Core.Channel.Member.Member.Type GetType ()
+		{
+			const string __id = "getType.()Lcom/ntt/skyway/core/channel/member/Member$Type;";
+			try {
+				var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
+				return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.Member.Type> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='publish' and count(parameter)=3 and parameter[1][@type='com.ntt.skyway.core.content.local.LocalStream'] and parameter[2][@type='com.ntt.skyway.core.channel.Publication.Options'] and parameter[3][@type='kotlin.coroutines.Continuation&lt;? super com.ntt.skyway.core.channel.Publication&gt;']]"
+		[Register ("publish", "(Lcom/ntt/skyway/core/content/local/LocalStream;Lcom/ntt/skyway/core/channel/Publication$Options;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
+		public unsafe global::Java.Lang.Object? Publish (global::Com.Ntt.Skyway.Core.Content.Local.LocalStream localStream, global::Com.Ntt.Skyway.Core.Channel.Publication.Options? options, global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "publish.(Lcom/ntt/skyway/core/content/local/LocalStream;Lcom/ntt/skyway/core/channel/Publication$Options;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [3];
+				__args [0] = new JniArgumentValue ((localStream == null) ? IntPtr.Zero : ((global::Java.Lang.Object) localStream).Handle);
+				__args [1] = new JniArgumentValue ((options == null) ? IntPtr.Zero : ((global::Java.Lang.Object) options).Handle);
+				__args [2] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				global::System.GC.KeepAlive (localStream);
+				global::System.GC.KeepAlive (options);
+				global::System.GC.KeepAlive (_completion);
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='subscribe' and count(parameter)=3 and parameter[1][@type='com.ntt.skyway.core.channel.Publication'] and parameter[2][@type='com.ntt.skyway.core.channel.Subscription.Options'] and parameter[3][@type='kotlin.coroutines.Continuation&lt;? super com.ntt.skyway.core.channel.Subscription&gt;']]"
+		[Register ("subscribe", "(Lcom/ntt/skyway/core/channel/Publication;Lcom/ntt/skyway/core/channel/Subscription$Options;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
+		public unsafe global::Java.Lang.Object? Subscribe (global::Com.Ntt.Skyway.Core.Channel.Publication publication, global::Com.Ntt.Skyway.Core.Channel.Subscription.Options? options, global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "subscribe.(Lcom/ntt/skyway/core/channel/Publication;Lcom/ntt/skyway/core/channel/Subscription$Options;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [3];
+				__args [0] = new JniArgumentValue ((publication == null) ? IntPtr.Zero : ((global::Java.Lang.Object) publication).Handle);
+				__args [1] = new JniArgumentValue ((options == null) ? IntPtr.Zero : ((global::Java.Lang.Object) options).Handle);
+				__args [2] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				global::System.GC.KeepAlive (publication);
+				global::System.GC.KeepAlive (options);
+				global::System.GC.KeepAlive (_completion);
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='subscribe' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='com.ntt.skyway.core.channel.Subscription.Options'] and parameter[3][@type='kotlin.coroutines.Continuation&lt;? super com.ntt.skyway.core.channel.Subscription&gt;']]"
+		[Register ("subscribe", "(Ljava/lang/String;Lcom/ntt/skyway/core/channel/Subscription$Options;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
+		public unsafe global::Java.Lang.Object? Subscribe (string publicationId, global::Com.Ntt.Skyway.Core.Channel.Subscription.Options? options, global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "subscribe.(Ljava/lang/String;Lcom/ntt/skyway/core/channel/Subscription$Options;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			IntPtr native_publicationId = JNIEnv.NewString ((string?)publicationId);
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [3];
+				__args [0] = new JniArgumentValue (native_publicationId);
+				__args [1] = new JniArgumentValue ((options == null) ? IntPtr.Zero : ((global::Java.Lang.Object) options).Handle);
+				__args [2] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				JNIEnv.DeleteLocalRef (native_publicationId);
+				global::System.GC.KeepAlive (options);
+				global::System.GC.KeepAlive (_completion);
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='unpublish' and count(parameter)=2 and parameter[1][@type='com.ntt.skyway.core.channel.Publication'] and parameter[2][@type='kotlin.coroutines.Continuation&lt;? super java.lang.Boolean&gt;']]"
+		[Register ("unpublish", "(Lcom/ntt/skyway/core/channel/Publication;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
+		public unsafe global::Java.Lang.Object? Unpublish (global::Com.Ntt.Skyway.Core.Channel.Publication publication, global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "unpublish.(Lcom/ntt/skyway/core/channel/Publication;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [2];
+				__args [0] = new JniArgumentValue ((publication == null) ? IntPtr.Zero : ((global::Java.Lang.Object) publication).Handle);
+				__args [1] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				global::System.GC.KeepAlive (publication);
+				global::System.GC.KeepAlive (_completion);
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='unpublish' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='kotlin.coroutines.Continuation&lt;? super java.lang.Boolean&gt;']]"
+		[Register ("unpublish", "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
+		public unsafe global::Java.Lang.Object? Unpublish (string publicationId, global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "unpublish.(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			IntPtr native_publicationId = JNIEnv.NewString ((string?)publicationId);
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [2];
+				__args [0] = new JniArgumentValue (native_publicationId);
+				__args [1] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				JNIEnv.DeleteLocalRef (native_publicationId);
+				global::System.GC.KeepAlive (_completion);
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='unsubscribe' and count(parameter)=2 and parameter[1][@type='com.ntt.skyway.core.channel.Subscription'] and parameter[2][@type='kotlin.coroutines.Continuation&lt;? super java.lang.Boolean&gt;']]"
+		[Register ("unsubscribe", "(Lcom/ntt/skyway/core/channel/Subscription;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
+		public unsafe global::Java.Lang.Object? Unsubscribe (global::Com.Ntt.Skyway.Core.Channel.Subscription subscription, global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "unsubscribe.(Lcom/ntt/skyway/core/channel/Subscription;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [2];
+				__args [0] = new JniArgumentValue ((subscription == null) ? IntPtr.Zero : ((global::Java.Lang.Object) subscription).Handle);
+				__args [1] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				global::System.GC.KeepAlive (subscription);
+				global::System.GC.KeepAlive (_completion);
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.channel.member']/class[@name='LocalPerson']/method[@name='unsubscribe' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='kotlin.coroutines.Continuation&lt;? super java.lang.Boolean&gt;']]"
+		[Register ("unsubscribe", "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
+		public unsafe global::Java.Lang.Object? Unsubscribe (string subscriptionId, global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "unsubscribe.(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			IntPtr native_subscriptionId = JNIEnv.NewString ((string?)subscriptionId);
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [2];
+				__args [0] = new JniArgumentValue (native_subscriptionId);
+				__args [1] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				JNIEnv.DeleteLocalRef (native_subscriptionId);
+				global::System.GC.KeepAlive (_completion);
 			}
 		}
 

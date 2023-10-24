@@ -99,5 +99,9 @@ namespace Com.Ntt.Skyway.Core.Content.Local {
 			}
 		}
 
-	}
+        public override ContentType GetContentType()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

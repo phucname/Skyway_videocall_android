@@ -22,7 +22,7 @@ namespace Com.Ntt.Skyway.Core {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.ntt.skyway.core']/class[@name='SkyWayContext']/field[@name='version']"
 		[Register ("version")]
-		public const string Version = (string) "1.4.2";
+		public const string Version = (string) "1.4.0";
 
 		// Metadata.xml XPath class reference: path="/api/package[@name='com.ntt.skyway.core']/class[@name='SkyWayContext.Error']"
 		[global::Android.Runtime.Register ("com/ntt/skyway/core/SkyWayContext$Error", DoNotGenerateAcw=true)]
@@ -1480,6 +1480,131 @@ namespace Com.Ntt.Skyway.Core {
 			}
 		}
 
+		public unsafe global::Kotlin.Jvm.Functions.IFunction1? OnErrorHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core']/class[@name='SkyWayContext']/method[@name='getOnErrorHandler' and count(parameter)=0]"
+			[Register ("getOnErrorHandler", "()Lkotlin/jvm/functions/Function1;", "")]
+			get {
+				const string __id = "getOnErrorHandler.()Lkotlin/jvm/functions/Function1;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction1> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core']/class[@name='SkyWayContext']/method[@name='setOnErrorHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function1&lt;? super com.ntt.skyway.core.SkyWayContext.Error, kotlin.Unit&gt;']]"
+			[Register ("setOnErrorHandler", "(Lkotlin/jvm/functions/Function1;)V", "")]
+			set {
+				const string __id = "setOnErrorHandler.(Lkotlin/jvm/functions/Function1;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
+		public unsafe global::Kotlin.Jvm.Functions.IFunction0? OnReconnectStartHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core']/class[@name='SkyWayContext']/method[@name='getOnReconnectStartHandler' and count(parameter)=0]"
+			[Register ("getOnReconnectStartHandler", "()Lkotlin/jvm/functions/Function0;", "")]
+			get {
+				const string __id = "getOnReconnectStartHandler.()Lkotlin/jvm/functions/Function0;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction0> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core']/class[@name='SkyWayContext']/method[@name='setOnReconnectStartHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;']]"
+			[Register ("setOnReconnectStartHandler", "(Lkotlin/jvm/functions/Function0;)V", "")]
+			set {
+				const string __id = "setOnReconnectStartHandler.(Lkotlin/jvm/functions/Function0;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
+		public unsafe global::Kotlin.Jvm.Functions.IFunction0? OnReconnectSuccessHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core']/class[@name='SkyWayContext']/method[@name='getOnReconnectSuccessHandler' and count(parameter)=0]"
+			[Register ("getOnReconnectSuccessHandler", "()Lkotlin/jvm/functions/Function0;", "")]
+			get {
+				const string __id = "getOnReconnectSuccessHandler.()Lkotlin/jvm/functions/Function0;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction0> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core']/class[@name='SkyWayContext']/method[@name='setOnReconnectSuccessHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;']]"
+			[Register ("setOnReconnectSuccessHandler", "(Lkotlin/jvm/functions/Function0;)V", "")]
+			set {
+				const string __id = "setOnReconnectSuccessHandler.(Lkotlin/jvm/functions/Function0;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
+		public unsafe global::Kotlin.Jvm.Functions.IFunction0? OnTokenExpiredHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core']/class[@name='SkyWayContext']/method[@name='getOnTokenExpiredHandler' and count(parameter)=0]"
+			[Register ("getOnTokenExpiredHandler", "()Lkotlin/jvm/functions/Function0;", "")]
+			get {
+				const string __id = "getOnTokenExpiredHandler.()Lkotlin/jvm/functions/Function0;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction0> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core']/class[@name='SkyWayContext']/method[@name='setOnTokenExpiredHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;']]"
+			[Register ("setOnTokenExpiredHandler", "(Lkotlin/jvm/functions/Function0;)V", "")]
+			set {
+				const string __id = "setOnTokenExpiredHandler.(Lkotlin/jvm/functions/Function0;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
+		public unsafe global::Kotlin.Jvm.Functions.IFunction0? OnTokenRefreshingNeededHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core']/class[@name='SkyWayContext']/method[@name='getOnTokenRefreshingNeededHandler' and count(parameter)=0]"
+			[Register ("getOnTokenRefreshingNeededHandler", "()Lkotlin/jvm/functions/Function0;", "")]
+			get {
+				const string __id = "getOnTokenRefreshingNeededHandler.()Lkotlin/jvm/functions/Function0;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction0> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core']/class[@name='SkyWayContext']/method[@name='setOnTokenRefreshingNeededHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;']]"
+			[Register ("setOnTokenRefreshingNeededHandler", "(Lkotlin/jvm/functions/Function0;)V", "")]
+			set {
+				const string __id = "setOnTokenRefreshingNeededHandler.(Lkotlin/jvm/functions/Function0;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
 		public unsafe global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Plugin.IPlugin> Plugins {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core']/class[@name='SkyWayContext']/method[@name='getPlugins' and count(parameter)=0]"
 			[Register ("getPlugins", "()Ljava/util/List;", "")]
@@ -1604,6 +1729,27 @@ namespace Com.Ntt.Skyway.Core {
 				_members.StaticMethods.InvokeVoidMethod (__id, __args);
 			} finally {
 				global::System.GC.KeepAlive (plugin);
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core']/class[@name='SkyWayContext']/method[@name='setup' and count(parameter)=4 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.ntt.skyway.core.SkyWayContext.Options'] and parameter[3][@type='kotlin.jvm.functions.Function1&lt;? super com.ntt.skyway.core.SkyWayContext.Error, kotlin.Unit&gt;'] and parameter[4][@type='kotlin.coroutines.Continuation&lt;? super java.lang.Boolean&gt;']]"
+		[Register ("setup", "(Landroid/content/Context;Lcom/ntt/skyway/core/SkyWayContext$Options;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
+		public static unsafe global::Java.Lang.Object? Setup (global::Android.Content.Context context, global::Com.Ntt.Skyway.Core.SkyWayContext.Options option, global::Kotlin.Jvm.Functions.IFunction1? onErrorHandler, global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "setup.(Landroid/content/Context;Lcom/ntt/skyway/core/SkyWayContext$Options;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [4];
+				__args [0] = new JniArgumentValue ((context == null) ? IntPtr.Zero : ((global::Java.Lang.Object) context).Handle);
+				__args [1] = new JniArgumentValue ((option == null) ? IntPtr.Zero : ((global::Java.Lang.Object) option).Handle);
+				__args [2] = new JniArgumentValue ((onErrorHandler == null) ? IntPtr.Zero : ((global::Java.Lang.Object) onErrorHandler).Handle);
+				__args [3] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.StaticMethods.InvokeObjectMethod (__id, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				global::System.GC.KeepAlive (context);
+				global::System.GC.KeepAlive (option);
+				global::System.GC.KeepAlive (onErrorHandler);
+				global::System.GC.KeepAlive (_completion);
 			}
 		}
 

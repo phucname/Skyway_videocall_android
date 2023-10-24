@@ -44,6 +44,12 @@
       "frameworks": {
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
+          "dependencies": {
+            "Xamarin.Kotlin.StdLib": {
+              "target": "Package",
+              "version": "[1.9.10.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

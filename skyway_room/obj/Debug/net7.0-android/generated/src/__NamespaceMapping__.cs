@@ -6,6 +6,7 @@ using System;
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.ntt.skyway.room.sfu", Managed="Com.Ntt.Skyway.Room.Sfu")]
 
 delegate IntPtr _JniMarshal_PP_L (IntPtr jnienv, IntPtr klass);
+delegate IntPtr _JniMarshal_PPLL_L (IntPtr jnienv, IntPtr klass, IntPtr p0, IntPtr p1);
 #if !NET
 namespace System.Runtime.Versioning {
     [System.Diagnostics.Conditional("NEVER")]

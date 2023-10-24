@@ -193,6 +193,56 @@ namespace Com.Ntt.Skyway.Core.Content.Local.Source {
 		{
 		}
 
+		public unsafe global::Kotlin.Jvm.Functions.IFunction1? OnCameraChangeErrorHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.content.local.source']/class[@name='CameraSource']/method[@name='getOnCameraChangeErrorHandler' and count(parameter)=0]"
+			[Register ("getOnCameraChangeErrorHandler", "()Lkotlin/jvm/functions/Function1;", "")]
+			get {
+				const string __id = "getOnCameraChangeErrorHandler.()Lkotlin/jvm/functions/Function1;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction1> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.content.local.source']/class[@name='CameraSource']/method[@name='setOnCameraChangeErrorHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function1&lt;? super java.lang.String, kotlin.Unit&gt;']]"
+			[Register ("setOnCameraChangeErrorHandler", "(Lkotlin/jvm/functions/Function1;)V", "")]
+			set {
+				const string __id = "setOnCameraChangeErrorHandler.(Lkotlin/jvm/functions/Function1;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
+		public unsafe global::Kotlin.Jvm.Functions.IFunction1? OnCameraChangedHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.content.local.source']/class[@name='CameraSource']/method[@name='getOnCameraChangedHandler' and count(parameter)=0]"
+			[Register ("getOnCameraChangedHandler", "()Lkotlin/jvm/functions/Function1;", "")]
+			get {
+				const string __id = "getOnCameraChangedHandler.()Lkotlin/jvm/functions/Function1;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction1> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.content.local.source']/class[@name='CameraSource']/method[@name='setOnCameraChangedHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function1&lt;? super java.lang.Boolean, kotlin.Unit&gt;']]"
+			[Register ("setOnCameraChangedHandler", "(Lkotlin/jvm/functions/Function1;)V", "")]
+			set {
+				const string __id = "setOnCameraChangedHandler.(Lkotlin/jvm/functions/Function1;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.content.local.source']/class[@name='CameraSource']/method[@name='changeCamera' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
 		[Register ("changeCamera", "(Ljava/lang/String;)V", "")]
 		public static unsafe void ChangeCamera (string deviceName)

@@ -63,7 +63,7 @@ namespace Com.Ntt.Skyway.Plugin.Unknown {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.plugin.unknown']/class[@name='UnknownPlugin']/method[@name='createRemoteMember' and count(parameter)=1 and parameter[1][@type='com.ntt.skyway.core.channel.member.Member.Dto']]"
 		[Register ("createRemoteMember", "(Lcom/ntt/skyway/core/channel/member/Member$Dto;)Lcom/ntt/skyway/core/channel/member/RemoteMember;", "")]
-		public unsafe global::Com.Ntt.Skyway.Core.Channel.Member.RemoteMember CreateRemoteMember (global::Com.Ntt.Skyway.Core.Channel.Member.IMember.Dto dto)
+		public unsafe global::Com.Ntt.Skyway.Core.Channel.Member.RemoteMember CreateRemoteMember (global::Com.Ntt.Skyway.Core.Channel.Member.Member.Dto dto)
 		{
 			const string __id = "createRemoteMember.(Lcom/ntt/skyway/core/channel/member/Member$Dto;)Lcom/ntt/skyway/core/channel/member/RemoteMember;";
 			try {

@@ -7,7 +7,7 @@ namespace Com.Ntt.Skyway.Plugin.Unknown {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.ntt.skyway.plugin.unknown']/class[@name='Unknown']"
 	[global::Android.Runtime.Register ("com/ntt/skyway/plugin/unknown/Unknown", DoNotGenerateAcw=true)]
-	public sealed partial class Unknown : global::Com.Ntt.Skyway.Core.Channel.Member.RemoteMemberImpl {
+	public sealed partial class Unknown : global::Com.Ntt.Skyway.Core.Channel.Member.RemoteMember {
 		static readonly JniPeerMembers _members = new XAPeerMembers ("com/ntt/skyway/plugin/unknown/Unknown", typeof (Unknown));
 
 		internal static new IntPtr class_ref {
@@ -49,18 +49,22 @@ namespace Com.Ntt.Skyway.Plugin.Unknown {
 			}
 		}
 
-		public unsafe global::Com.Ntt.Skyway.Core.Channel.Member.IMember.Type Type {
+		public unsafe global::Com.Ntt.Skyway.Core.Channel.Member.Member.Type Type {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.plugin.unknown']/class[@name='Unknown']/method[@name='getType' and count(parameter)=0]"
 			[Register ("getType", "()Lcom/ntt/skyway/core/channel/member/Member$Type;", "")]
 			get {
 				const string __id = "getType.()Lcom/ntt/skyway/core/channel/member/Member$Type;";
 				try {
 					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
-					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.IMember.Type> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
+					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.Member.Type> (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
 				} finally {
 				}
 			}
 		}
 
-	}
+        public override Type GetType()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

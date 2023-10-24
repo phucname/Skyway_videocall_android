@@ -5,5 +5,6 @@
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
     <ActiveDebugProfile>Pixel 4 XL API 33 (Android 13.0 - API 33)</ActiveDebugProfile>
     <DefaultDevice>Pixel_4_XL_API_33</DefaultDevice>
+    <AndroidDesignerPreferredDevice>7.3in Foldable</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

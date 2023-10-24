@@ -16,7 +16,7 @@ namespace Com.Ntt.Skyway.Plugin {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.plugin']/interface[@name='Plugin']/method[@name='createRemoteMember' and count(parameter)=1 and parameter[1][@type='com.ntt.skyway.core.channel.member.Member.Dto']]"
 		[Register ("createRemoteMember", "(Lcom/ntt/skyway/core/channel/member/Member$Dto;)Lcom/ntt/skyway/core/channel/member/RemoteMember;", "GetCreateRemoteMember_Lcom_ntt_skyway_core_channel_member_Member_Dto_Handler:Com.Ntt.Skyway.Plugin.IPluginInvoker, skyway_core")]
-		global::Com.Ntt.Skyway.Core.Channel.Member.RemoteMember CreateRemoteMember (global::Com.Ntt.Skyway.Core.Channel.Member.IMember.Dto dto);
+		global::Com.Ntt.Skyway.Core.Channel.Member.RemoteMember CreateRemoteMember (global::Com.Ntt.Skyway.Core.Channel.Member.Member.Dto dto);
 
 	}
 
@@ -112,14 +112,14 @@ namespace Com.Ntt.Skyway.Plugin {
 		static IntPtr n_CreateRemoteMember_Lcom_ntt_skyway_core_channel_member_Member_Dto_ (IntPtr jnienv, IntPtr native__this, IntPtr native_dto)
 		{
 			var __this = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Plugin.IPlugin> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
-			var dto = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.IMember.Dto> (native_dto, JniHandleOwnership.DoNotTransfer);
+			var dto = global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Core.Channel.Member.Member.Dto> (native_dto, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.CreateRemoteMember (dto!));
 			return __ret;
 		}
 #pragma warning restore 0169
 
 		IntPtr id_createRemoteMember_Lcom_ntt_skyway_core_channel_member_Member_Dto_;
-		public unsafe global::Com.Ntt.Skyway.Core.Channel.Member.RemoteMember CreateRemoteMember (global::Com.Ntt.Skyway.Core.Channel.Member.IMember.Dto dto)
+		public unsafe global::Com.Ntt.Skyway.Core.Channel.Member.RemoteMember CreateRemoteMember (global::Com.Ntt.Skyway.Core.Channel.Member.Member.Dto dto)
 		{
 			if (id_createRemoteMember_Lcom_ntt_skyway_core_channel_member_Member_Dto_ == IntPtr.Zero)
 				id_createRemoteMember_Lcom_ntt_skyway_core_channel_member_Member_Dto_ = JNIEnv.GetMethodID (class_ref, "createRemoteMember", "(Lcom/ntt/skyway/core/channel/member/Member$Dto;)Lcom/ntt/skyway/core/channel/member/RemoteMember;");

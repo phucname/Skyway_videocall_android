@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "TjzwdoaNrzPLRAdT31QtrNLKN4wq+Lmj2b50mdPDni9yMAeTvCzXnDL5zNyR9wRTe2wvomVe7cMRd7yNEoBFGA==",
+  "dgSpecHash": "1YUoBFs3UIVdImxHt58BMT9lSu8O3hEC7IKRdsXkofTQa7tMh7WOD0KgWwOg9qBG0LLR5zQuRwkU6XuGCM/GBQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dell\\project\\Skyway_videocall_android\\skyway_core\\skyway_core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\xamarin.jetbrains.annotations\\24.0.1.5\\xamarin.jetbrains.annotations.24.0.1.5.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xamarin.kotlin.stdlib\\1.9.10.2\\xamarin.kotlin.stdlib.1.9.10.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xamarin.kotlin.stdlib.common\\1.9.10.2\\xamarin.kotlin.stdlib.common.1.9.10.2.nupkg.sha512"
+  ],
   "logs": []
 }

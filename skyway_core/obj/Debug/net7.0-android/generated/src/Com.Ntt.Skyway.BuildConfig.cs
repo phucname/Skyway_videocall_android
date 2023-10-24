@@ -22,7 +22,7 @@ namespace Com.Ntt.Skyway {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.ntt.skyway']/class[@name='BuildConfig']/field[@name='SkyWayVer']"
 		[Register ("SkyWayVer")]
-		public const string SkyWayVer = (string) "1.4.2";
+		public const string SkyWayVer = (string) "1.4.0";
 
 		static readonly JniPeerMembers _members = new XAPeerMembers ("com/ntt/skyway/BuildConfig", typeof (BuildConfig));
 

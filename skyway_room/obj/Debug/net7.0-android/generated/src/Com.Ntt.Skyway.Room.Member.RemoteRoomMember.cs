@@ -36,5 +36,23 @@ namespace Com.Ntt.Skyway.Room.Member {
 		{
 		}
 
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RemoteRoomMember']/method[@name='unsubscribe' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='kotlin.coroutines.Continuation&lt;? super java.lang.Boolean&gt;']]"
+		[Register ("unsubscribe", "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
+		public unsafe global::Java.Lang.Object? Unsubscribe (string subscriptionsId, global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "unsubscribe.(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			IntPtr native_subscriptionsId = JNIEnv.NewString ((string?)subscriptionsId);
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [2];
+				__args [0] = new JniArgumentValue (native_subscriptionsId);
+				__args [1] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				JNIEnv.DeleteLocalRef (native_subscriptionsId);
+				global::System.GC.KeepAlive (_completion);
+			}
+		}
+
 	}
 }

@@ -228,6 +228,106 @@ namespace Com.Ntt.Skyway.Room.Member {
 			}
 		}
 
+		public unsafe global::Kotlin.Jvm.Functions.IFunction0? OnLeftHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RoomMember']/method[@name='getOnLeftHandler' and count(parameter)=0]"
+			[Register ("getOnLeftHandler", "()Lkotlin/jvm/functions/Function0;", "")]
+			get {
+				const string __id = "getOnLeftHandler.()Lkotlin/jvm/functions/Function0;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction0> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RoomMember']/method[@name='setOnLeftHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;']]"
+			[Register ("setOnLeftHandler", "(Lkotlin/jvm/functions/Function0;)V", "")]
+			set {
+				const string __id = "setOnLeftHandler.(Lkotlin/jvm/functions/Function0;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
+		public unsafe global::Kotlin.Jvm.Functions.IFunction1? OnMetadataUpdatedHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RoomMember']/method[@name='getOnMetadataUpdatedHandler' and count(parameter)=0]"
+			[Register ("getOnMetadataUpdatedHandler", "()Lkotlin/jvm/functions/Function1;", "")]
+			get {
+				const string __id = "getOnMetadataUpdatedHandler.()Lkotlin/jvm/functions/Function1;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction1> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RoomMember']/method[@name='setOnMetadataUpdatedHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function1&lt;? super java.lang.String, kotlin.Unit&gt;']]"
+			[Register ("setOnMetadataUpdatedHandler", "(Lkotlin/jvm/functions/Function1;)V", "")]
+			set {
+				const string __id = "setOnMetadataUpdatedHandler.(Lkotlin/jvm/functions/Function1;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
+		public unsafe global::Kotlin.Jvm.Functions.IFunction0? OnPublicationListChangedHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RoomMember']/method[@name='getOnPublicationListChangedHandler' and count(parameter)=0]"
+			[Register ("getOnPublicationListChangedHandler", "()Lkotlin/jvm/functions/Function0;", "")]
+			get {
+				const string __id = "getOnPublicationListChangedHandler.()Lkotlin/jvm/functions/Function0;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction0> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RoomMember']/method[@name='setOnPublicationListChangedHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;']]"
+			[Register ("setOnPublicationListChangedHandler", "(Lkotlin/jvm/functions/Function0;)V", "")]
+			set {
+				const string __id = "setOnPublicationListChangedHandler.(Lkotlin/jvm/functions/Function0;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
+		public unsafe global::Kotlin.Jvm.Functions.IFunction0? OnSubscriptionListChangedHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RoomMember']/method[@name='getOnSubscriptionListChangedHandler' and count(parameter)=0]"
+			[Register ("getOnSubscriptionListChangedHandler", "()Lkotlin/jvm/functions/Function0;", "")]
+			get {
+				const string __id = "getOnSubscriptionListChangedHandler.()Lkotlin/jvm/functions/Function0;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction0> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RoomMember']/method[@name='setOnSubscriptionListChangedHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;']]"
+			[Register ("setOnSubscriptionListChangedHandler", "(Lkotlin/jvm/functions/Function0;)V", "")]
+			set {
+				const string __id = "setOnSubscriptionListChangedHandler.(Lkotlin/jvm/functions/Function0;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
 		public unsafe global::System.Collections.Generic.IList<global::Com.Ntt.Skyway.Room.RoomPublication> Publications {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RoomMember']/method[@name='getPublications' and count(parameter)=0]"
 			[Register ("getPublications", "()Ljava/util/List;", "")]
@@ -264,6 +364,39 @@ namespace Com.Ntt.Skyway.Room.Member {
 					return global::Android.Runtime.JavaList<global::Com.Ntt.Skyway.Room.RoomSubscription>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef)!;
 				} finally {
 				}
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RoomMember']/method[@name='leave' and count(parameter)=1 and parameter[1][@type='kotlin.coroutines.Continuation&lt;? super java.lang.Boolean&gt;']]"
+		[Register ("leave", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
+		public unsafe global::Java.Lang.Object? Leave (global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "leave.(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				global::System.GC.KeepAlive (_completion);
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room.member']/class[@name='RoomMember']/method[@name='updateMetadata' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='kotlin.coroutines.Continuation&lt;? super java.lang.Boolean&gt;']]"
+		[Register ("updateMetadata", "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
+		public unsafe global::Java.Lang.Object? UpdateMetadata (string metadata, global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "updateMetadata.(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			IntPtr native_metadata = JNIEnv.NewString ((string?)metadata);
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [2];
+				__args [0] = new JniArgumentValue (native_metadata);
+				__args [1] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				JNIEnv.DeleteLocalRef (native_metadata);
+				global::System.GC.KeepAlive (_completion);
 			}
 		}
 

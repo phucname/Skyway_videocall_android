@@ -8,4 +8,7 @@
   <ItemGroup>
     <None Remove="skyway-sfubot.aar" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.9.10.2" />
+  </ItemGroup>
 </Project>

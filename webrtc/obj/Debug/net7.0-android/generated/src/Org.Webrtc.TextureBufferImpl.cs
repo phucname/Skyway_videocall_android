@@ -480,5 +480,9 @@ namespace Org.Webrtc {
 			}
 		}
 
-	}
+        VideoFrame.ITextureBuffer.Type? VideoFrame.ITextureBuffer.GetType()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

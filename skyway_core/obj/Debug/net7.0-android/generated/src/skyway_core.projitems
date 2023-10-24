@@ -6,18 +6,12 @@
   <!-- Classes -->
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.BuildConfig.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.ChannelImpl.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.IChannel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.IPublication.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.ISubscription.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.Member.IMember.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.Channel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.Member.LocalPerson.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.Member.LocalPersonImpl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.Member.Member.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.Member.RemoteMember.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.Member.RemoteMemberImpl.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.PublicationImpl.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.Repository.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.SubscriptionImpl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.Publication.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Channel.Subscription.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Content.Codec.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Content.Encoding.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Content.Local.LocalAudioStream.cs" />
@@ -43,9 +37,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Content.WebRTCStats.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Content.WebRTCStatsReport.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.ISkyWayOptIn.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Network.HttpClient.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Network.WebSocketClient.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Network.WebSocketClientFactory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.SkyWayContext.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.SkyWayOptInAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Com.Ntt.Skyway.Core.Util.Logger.cs" />

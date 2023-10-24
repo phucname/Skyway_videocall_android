@@ -339,6 +339,31 @@ namespace Com.Ntt.Skyway.Core.Content.Sink {
 			}
 		}
 
+		public unsafe global::Kotlin.Jvm.Functions.IFunction1? OnFrameHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.content.sink']/class[@name='CustomRenderer']/method[@name='getOnFrameHandler' and count(parameter)=0]"
+			[Register ("getOnFrameHandler", "()Lkotlin/jvm/functions/Function1;", "")]
+			get {
+				const string __id = "getOnFrameHandler.()Lkotlin/jvm/functions/Function1;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction1> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.content.sink']/class[@name='CustomRenderer']/method[@name='setOnFrameHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function1&lt;? super com.ntt.skyway.core.content.sink.CustomRenderer.VideoFrameBuffer, kotlin.Unit&gt;']]"
+			[Register ("setOnFrameHandler", "(Lkotlin/jvm/functions/Function1;)V", "")]
+			set {
+				const string __id = "setOnFrameHandler.(Lkotlin/jvm/functions/Function1;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
 		public unsafe bool Setup {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.core.content.sink']/class[@name='CustomRenderer']/method[@name='isSetup' and count(parameter)=0]"
 			[Register ("isSetup", "()Z", "")]

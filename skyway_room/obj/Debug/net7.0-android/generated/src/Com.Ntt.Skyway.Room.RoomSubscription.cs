@@ -161,6 +161,56 @@ namespace Com.Ntt.Skyway.Room {
 			}
 		}
 
+		public unsafe global::Kotlin.Jvm.Functions.IFunction0? OnCanceledHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomSubscription']/method[@name='getOnCanceledHandler' and count(parameter)=0]"
+			[Register ("getOnCanceledHandler", "()Lkotlin/jvm/functions/Function0;", "")]
+			get {
+				const string __id = "getOnCanceledHandler.()Lkotlin/jvm/functions/Function0;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction0> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomSubscription']/method[@name='setOnCanceledHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function0&lt;kotlin.Unit&gt;']]"
+			[Register ("setOnCanceledHandler", "(Lkotlin/jvm/functions/Function0;)V", "")]
+			set {
+				const string __id = "setOnCanceledHandler.(Lkotlin/jvm/functions/Function0;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
+		public unsafe global::Kotlin.Jvm.Functions.IFunction1? OnConnectionStateChangedHandler {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomSubscription']/method[@name='getOnConnectionStateChangedHandler' and count(parameter)=0]"
+			[Register ("getOnConnectionStateChangedHandler", "()Lkotlin/jvm/functions/Function1;", "")]
+			get {
+				const string __id = "getOnConnectionStateChangedHandler.()Lkotlin/jvm/functions/Function1;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Kotlin.Jvm.Functions.IFunction1> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomSubscription']/method[@name='setOnConnectionStateChangedHandler' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function1&lt;? super java.lang.String, kotlin.Unit&gt;']]"
+			[Register ("setOnConnectionStateChangedHandler", "(Lkotlin/jvm/functions/Function1;)V", "")]
+			set {
+				const string __id = "setOnConnectionStateChangedHandler.(Lkotlin/jvm/functions/Function1;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeNonvirtualVoidMethod (__id, this, __args);
+				} finally {
+					global::System.GC.KeepAlive (value);
+				}
+			}
+		}
+
 		public unsafe string PreferredEncodingId {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomSubscription']/method[@name='getPreferredEncodingId' and count(parameter)=0]"
 			[Register ("getPreferredEncodingId", "()Ljava/lang/String;", "")]
@@ -210,6 +260,39 @@ namespace Com.Ntt.Skyway.Room {
 					return global::Java.Lang.Object.GetObject<global::Com.Ntt.Skyway.Room.Member.RoomMember> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
 				} finally {
 				}
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomSubscription']/method[@name='cancel' and count(parameter)=1 and parameter[1][@type='kotlin.coroutines.Continuation&lt;? super java.lang.Boolean&gt;']]"
+		[Register ("cancel", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
+		public unsafe global::Java.Lang.Object? Cancel (global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "cancel.(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				global::System.GC.KeepAlive (_completion);
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ntt.skyway.room']/class[@name='RoomSubscription']/method[@name='changePreferredEncoding' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='kotlin.coroutines.Continuation&lt;? super kotlin.Unit&gt;']]"
+		[Register ("changePreferredEncoding", "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "")]
+		public unsafe global::Java.Lang.Object? ChangePreferredEncoding (string preferredEncodingId, global::Kotlin.Coroutines.IContinuation _completion)
+		{
+			const string __id = "changePreferredEncoding.(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;";
+			IntPtr native_preferredEncodingId = JNIEnv.NewString ((string?)preferredEncodingId);
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [2];
+				__args [0] = new JniArgumentValue (native_preferredEncodingId);
+				__args [1] = new JniArgumentValue ((_completion == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _completion).Handle);
+				var __rm = _members.InstanceMethods.InvokeNonvirtualObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				JNIEnv.DeleteLocalRef (native_preferredEncodingId);
+				global::System.GC.KeepAlive (_completion);
 			}
 		}
 

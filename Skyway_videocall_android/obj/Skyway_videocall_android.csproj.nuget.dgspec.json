@@ -44,6 +44,12 @@
       "frameworks": {
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
+          "dependencies": {
+            "Xamarin.Kotlin.StdLib": {
+              "target": "Package",
+              "version": "[1.9.10.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -107,6 +113,12 @@
       "frameworks": {
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
+          "dependencies": {
+            "Xamarin.Kotlin.StdLib": {
+              "target": "Package",
+              "version": "[1.9.10.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -170,6 +182,12 @@
       "frameworks": {
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
+          "dependencies": {
+            "Xamarin.Kotlin.StdLib": {
+              "target": "Package",
+              "version": "[1.9.10.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -247,6 +265,10 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "dependencies": {
+            "GoogleGson": {
+              "target": "Package",
+              "version": "[2.10.1.6, )"
+            },
             "Square.OkHttp3": {
               "target": "Package",
               "version": "[4.11.0.2, )"
@@ -254,6 +276,10 @@
             "Square.OkHttp3.LoggingInterceptor": {
               "target": "Package",
               "version": "[4.10.0.1, )"
+            },
+            "Xamarin.AndroidX.Core": {
+              "target": "Package",
+              "version": "[1.12.0.2, )"
             }
           },
           "imports": [

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "i0FECAVfZoB0d8sC0RTWE6Q3fXPFFSF3Bt7DhGZWyNiX3PXFRDGk8juOpFpht38U4xVEd8Y/75sDHLUck/BKhA==",
+  "dgSpecHash": "hHhN3Ys/fMH7je0pJh6G5N81HOIm17rI4mxdUE4LvUeRxHhGap6H0KVi90c8auOGiBAs/kGl7ikFAf/D61UUag==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dell\\project\\Skyway_videocall_android\\skyway_sfubot\\skyway_sfubot.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\xamarin.jetbrains.annotations\\24.0.1.5\\xamarin.jetbrains.annotations.24.0.1.5.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xamarin.kotlin.stdlib\\1.9.10.2\\xamarin.kotlin.stdlib.1.9.10.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xamarin.kotlin.stdlib.common\\1.9.10.2\\xamarin.kotlin.stdlib.common.1.9.10.2.nupkg.sha512"
+  ],
   "logs": []
 }

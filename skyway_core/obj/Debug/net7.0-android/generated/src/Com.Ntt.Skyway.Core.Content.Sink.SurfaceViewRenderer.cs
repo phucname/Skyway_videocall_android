@@ -221,6 +221,26 @@ namespace Com.Ntt.Skyway.Core.Content.Sink {
 				{
 				}
 
+				// Metadata.xml XPath constructor reference: path="/api/package[@name='com.ntt.skyway.core.content.sink']/class[@name='SurfaceViewRenderer.ScalingType.Companion']/constructor[@name='SurfaceViewRenderer.ScalingType.Companion' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.internal.DefaultConstructorMarker']]"
+				[Register (".ctor", "(Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "")]
+				public unsafe Companion (global::Kotlin.Jvm.Internal.DefaultConstructorMarker? _constructor_marker) : base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
+				{
+					const string __id = "(Lkotlin/jvm/internal/DefaultConstructorMarker;)V";
+
+					if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
+						return;
+
+					try {
+						JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+						__args [0] = new JniArgumentValue ((_constructor_marker == null) ? IntPtr.Zero : ((global::Java.Lang.Object) _constructor_marker).Handle);
+						var __r = _members.InstanceMethods.StartCreateInstance (__id, ((object) this).GetType (), __args);
+						SetHandle (__r.Handle, JniHandleOwnership.TransferLocalRef);
+						_members.InstanceMethods.FinishCreateInstance (__id, this, __args);
+					} finally {
+						global::System.GC.KeepAlive (_constructor_marker);
+					}
+				}
+
 			}
 
 			static readonly JniPeerMembers _members = new XAPeerMembers ("com/ntt/skyway/core/content/sink/SurfaceViewRenderer$ScalingType", typeof (ScalingType));
