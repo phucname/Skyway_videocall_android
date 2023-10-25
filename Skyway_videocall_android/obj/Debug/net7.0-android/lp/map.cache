@@ -1,4 +1,5 @@
 GoogleGson.dll
+skyway_room.dll
 Square.OkHttp3.dll
 Square.OkHttp3.LoggingInterceptor.dll
 Square.OkIO.dll
@@ -37,12 +38,11 @@ androidx.interpolator.interpolator.aar
 androidx.annotation.annotation-experimental.aar
 androidx.core.core.aar
 GoogleGson.aar
-Square.OkHttp3.aar
-Square.OkHttp3.LoggingInterceptor.aar
-Square.OkIO.aar
-Square.OkIO.JVM.aar
-skyway_room.dll
 libwebrtc.aar
 skyway-core.aar
 skyway-room.aar
 skyway-sfubot.aar
+Square.OkHttp3.aar
+Square.OkHttp3.LoggingInterceptor.aar
+Square.OkIO.aar
+Square.OkIO.JVM.aar

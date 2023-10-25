@@ -5,12 +5,10 @@ C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debu
 C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\libraryprojectimports.cache
 C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\stamp\_BuildLibraryImportsCache.stamp
 C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\res.flag
-C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\lp\30\jl\files.cache
 C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\lp\31\jl\files.cache
 C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\lp\32\jl\files.cache
 C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\lp\33\jl\files.cache
 C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\lp\34\jl\files.cache
-C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\lp\36\jl\files.cache
 C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\lp\37\jl\files.cache
 C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\R.txt
 C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\R.cs.flag
@@ -344,3 +342,5 @@ C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debu
 C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\lp\35\jl\files.cache
+C:\Users\Dell\project\Skyway_videocall_android\Skyway_videocall_android\obj\Debug\net7.0-android\lp\38\jl\files.cache

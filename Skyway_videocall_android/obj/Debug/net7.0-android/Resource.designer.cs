@@ -455,67 +455,70 @@ namespace Skyway_videocall_android
 			public const int notification_main_column_container = 2131034170;
 			
 			// aapt resource value: 0x7F05003B
-			public const int right_icon = 2131034171;
+			public const int remote_renderer = 2131034171;
 			
 			// aapt resource value: 0x7F05003C
-			public const int right_side = 2131034172;
+			public const int right_icon = 2131034172;
 			
 			// aapt resource value: 0x7F05003D
-			public const int room_name = 2131034173;
+			public const int right_side = 2131034173;
 			
 			// aapt resource value: 0x7F05003E
-			public const int tag_accessibility_actions = 2131034174;
+			public const int room_name = 2131034174;
 			
 			// aapt resource value: 0x7F05003F
-			public const int tag_accessibility_clickable_spans = 2131034175;
+			public const int tag_accessibility_actions = 2131034175;
 			
 			// aapt resource value: 0x7F050040
-			public const int tag_accessibility_heading = 2131034176;
+			public const int tag_accessibility_clickable_spans = 2131034176;
 			
 			// aapt resource value: 0x7F050041
-			public const int tag_accessibility_pane_title = 2131034177;
+			public const int tag_accessibility_heading = 2131034177;
 			
 			// aapt resource value: 0x7F050042
-			public const int tag_on_apply_window_listener = 2131034178;
+			public const int tag_accessibility_pane_title = 2131034178;
 			
 			// aapt resource value: 0x7F050043
-			public const int tag_on_receive_content_listener = 2131034179;
+			public const int tag_on_apply_window_listener = 2131034179;
 			
 			// aapt resource value: 0x7F050044
-			public const int tag_on_receive_content_mime_types = 2131034180;
+			public const int tag_on_receive_content_listener = 2131034180;
 			
 			// aapt resource value: 0x7F050045
-			public const int tag_screen_reader_focusable = 2131034181;
+			public const int tag_on_receive_content_mime_types = 2131034181;
 			
 			// aapt resource value: 0x7F050046
-			public const int tag_state_description = 2131034182;
+			public const int tag_screen_reader_focusable = 2131034182;
 			
 			// aapt resource value: 0x7F050047
-			public const int tag_transition_group = 2131034183;
+			public const int tag_state_description = 2131034183;
 			
 			// aapt resource value: 0x7F050048
-			public const int tag_unhandled_key_event_manager = 2131034184;
+			public const int tag_transition_group = 2131034184;
 			
 			// aapt resource value: 0x7F050049
-			public const int tag_unhandled_key_listeners = 2131034185;
+			public const int tag_unhandled_key_event_manager = 2131034185;
 			
 			// aapt resource value: 0x7F05004A
-			public const int tag_window_insets_animation_callback = 2131034186;
+			public const int tag_unhandled_key_listeners = 2131034186;
 			
 			// aapt resource value: 0x7F05004B
-			public const int text = 2131034187;
+			public const int tag_window_insets_animation_callback = 2131034187;
 			
 			// aapt resource value: 0x7F05004C
-			public const int text2 = 2131034188;
+			public const int text = 2131034188;
 			
 			// aapt resource value: 0x7F05004D
-			public const int time = 2131034189;
+			public const int text2 = 2131034189;
 			
 			// aapt resource value: 0x7F05004E
-			public const int title = 2131034190;
+			public const int time = 2131034190;
 			
 			// aapt resource value: 0x7F05004F
-			public const int view_tree_lifecycle_owner = 2131034191;
+			public const int title = 2131034191;
+			
+			// aapt resource value: 0x7F050050
+			public const int view_tree_lifecycle_owner = 2131034192;
 			
 			static Id()
 			{
